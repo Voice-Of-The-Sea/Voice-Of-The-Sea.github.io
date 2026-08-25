@@ -1,0 +1,362 @@
+<!--
+/************* Ajax Contact Form 1.0 *****************************/
+/*
+Released by AwesomePHP.com, under the GPL License, a
+copy of it should be attached to the zip file, or
+you can view it on http://AwesomePHP.com/gpl.txt
+*/
+/************* Ajax Contact Form 1.0 *****************************/
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Product Order Form</title>
+<style type="text/css">
+td
+{	
+	border:1px solid gray;
+	font-size:12px;
+}
+.header
+{
+	background-color:#CCCCCC;
+	font-size:20px;
+}
+.error
+{
+	background-color:#FFBFBF;
+	color:#FF0000;
+	font-size:14px;
+}
+*
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+textarea,.textbox
+{
+	width:100%;
+	border:1px solid gray;
+}
+.style2 {
+	font-size: 14px;
+	font-weight: bold;
+}
+</style>
+<link href="Style Sheets/KWGSS.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style3 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: large;
+}
+.style8 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-variant: normal;
+	font-style: italic;
+	color: #035BA5;
+}
+.style9 {font-family: Georgia, "Times New Roman", Times, serif}
+.style10 {font-family: Arial, Helvetica, sans-serif; font-size: large; }
+.style11 {font-variant: normal; color: #035BA5; font-family: Arial, Helvetica, sans-serif;}
+.style43 {	font-family: "Courier New", Courier, monospace;
+	font-size: 18px;
+	color: #000000;
+	font-weight: bold;
+}
+.style68 {font-size: 12px}
+.style74 {	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+}
+.style78 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold; }
+.style93 {color: #FF0000; font-size: 12px; }
+.style107 {
+	color: #000000;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 12px;
+}
+.style41 {font-size: 18px}
+.style76 {font-size: 12px; font-weight: bold; }
+.style79 {color: #000000}
+.style13 {color: #FF0000}
+.style23 {	font-family: "Courier New", Courier, monospace;
+	font-size: 18px;
+}
+.style24 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.style88 {font-family: Verdana, Arial, Helvetica, sans-serif}
+.style90 {font-variant: normal; font-weight: bold; text-transform: none; font-family: Verdana, Arial, Helvetica, sans-serif;}
+.style91 {	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+}
+.style92 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; }
+.style109 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; }
+.style30 {	color: #000000;
+	font-family: "Courier New", Courier, monospace;
+}
+.style55 {color: #FF0000; font-family: "Courier New", Courier, monospace; font-size: 18px; }
+.style94 {font-family: Arial, Helvetica, sans-serif; }
+.style102 {font-size: 14px; font-variant: normal; text-transform: none;}
+.style52 {text-transform: none; font-family: "Courier New", Courier, monospace; font-variant: normal;}
+.style61 {	color: #FF0000;
+	font-weight: bold;
+	font-size: small;
+}
+.style62 {font-size: xx-small}
+-->
+</style>
+<link href="../Style Sheets/KWGSS.css" rel="stylesheet" type="text/css">
+<script type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+.style110 {	color: #000000;
+	font-weight: bold;
+	font-style: italic;
+}
+.style111 {color: #666666}
+-->
+</style>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function varitext(text){
+text=document
+print(text)
+}
+//  End -->
+</script>
+</head>
+<script type="text/javascript" src="formProcess.js"></script>
+<body>
+<div align="center">
+  <p><span class="Heading style3"><span class="style8"><img src="../Images/Animation/Shark.gif" width="50" height="40" align="absmiddle"> <span class="style9">Voice of the Sea</span> <br>
+  </span></span><span class="style10"><span class="style11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product Order  Form</span></span></p>
+</div>
+<form name="contact" id="contact" method="post" action="contact.html" style="display:inline;">
+  <p><span class="style15 style11"><strong>Order Information:</strong></span><br>
+    <span class="Small"><span class="style11 style15"><span class="style43"><span class="style68">Item 1</span> <span class="style93">*</span>
+    </span></span></span>
+    <span class="style43">
+    <select name="Item1_Product" class="SmallBlack" id="Item1_Product">
+      <option value=" " selected></option>
+      <option value="None">None</option>
+      <option value="Greeting Cards">Greeting Cards $x.xx per dozen (includes shipping and handling)</option>
+      <option value="Coffee Mug">Coffee Mug $x.99 (includes shipping and handling)</option>
+      <option value="Mouse Pad">Mouse Pad $x.xx (includes shipping and handling)</option>
+    </select>
+    </span><span class="Small"><span class="style74">&nbsp;&nbsp;&nbsp;Quantity </span>
+    <select name="Item1_Qty" class="SmallBlack" id="Item1_Qty">
+      <option selected> </option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>&nbsp;
+    <span class="style78">&nbsp;&nbsp;&nbsp;Product Code</span>
+    <input name="Item1_Code" type="text" class="SmallBlack" id="Item1_Code" size="4" maxlength="4">
+    </span><br>
+    <span class="Small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style107">Need</span><span class="style68 Reg"><strong><em> Product Code <span class="style68">Explanation</span></em></strong></span><span class="Reg style68"><em>.....................................................................</em></span><span class="style41">&nbsp;</span></span><a href="#" onClick="MM_openBrWindow('../Product_Code_Explanation.html','','width=500,height=400')" onMouseOver="MM_swapImage('Click here','','../Images/Buttons/Click_Here_Bld.gif',0)" onMouseOut="MM_swapImgRestore()"><img src="../Images/Buttons/Click_Here_Reg.gif" name="Click here" width="80" height="17" border="0"></a><br>
+    <span class="style43"><span class="style68">Item 2</span>&nbsp;&nbsp;
+    <select name="Item2_Product" class="SmallBlack" id="Item2_Product">
+      <option value=" " selected> </option>
+      <option value="None">None</option>
+      <option value="Greeting Cards">Greeting Cards $x.xx per dozen (includes shipping and handling)</option>
+      <option value="Coffee Mug">Coffee Mug $x.99 (includes shipping and handling)</option>
+      <option value="Mouse Pad">Mouse Pad $x.xx (includes shipping and handling)</option>
+    </select>
+    <span class="style68">&nbsp;&nbsp;Quantity</span></span>
+    <select name="Item2_Qty" class="SmallBlack" id="Item2_Qty">
+      <option selected> </option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <span class="style78">&nbsp;&nbsp;Product Code </span>
+    <input name="Item2_Code" type="text" class="SmallBlack" id="Item2_Code" size="4" maxlength="4">
+    <br>
+    <span class="style43"><span class="style68">Item 3</span>&nbsp;&nbsp; </span> <span class="style43">
+    <select name="Item3_Product" class="SmallBlack" id="Item3_Product">
+      <option value="  " selected> </option>
+      <option value="None">None</option>
+      <option value="Greeting Cards">Greeting Cards $x.xx per dozen (includes shipping and handling)</option>
+      <option value="Coffee Mug">Coffee Mug $x.99 (includes shipping and handling)</option>
+      <option value="Mouse Pad">Mouse Pad $x.xx (includes shipping and handling)</option>
+      <option value=" "> </option>
+    </select>
+    </span><span class="style76">&nbsp;&nbsp;<span class="style79">Quantity</span></span>
+    <select name="Item3_Qty" class="SmallBlack" id="Item3_Qty">
+      <option selected> </option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <span class="style78">&nbsp;&nbsp;Product Code</span>
+    <input name="Item3_Code" type="text" class="SmallBlack" id="Item3_Code" size="4" maxlength="4">
+  </p>
+  <p><span class="style11 style15"><br>
+      <br>
+      <strong>Mailing Information:</strong></span><br>
+    <span class="style24"><span class="style90">Name </span></span><span class="style2 style13 style23 style88 style68"><span class="style68 style91"><span class="style23"><span class="style68">*</span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span></span><span class="style2 style13">
+    <input name="Name" type="text" class="SmallBlack" id="Name" size="54">
+    </span><br>
+    <span class="Reg"><span class="style92"><strong>Address One</strong> <span class="style13">*</span></span>
+    <input name="Address1" type="text" class="SmallBlack" id="Address1" size="54">
+    <br>
+    <span class="style109">Address Two&nbsp;&nbsp;&nbsp;</span>
+    <input name="Address2" type="text" class="SmallBlack" id="Address2" size="54">
+    <br>
+    </span><span class="style2 style13"><span class="Reg"><span class="style23"><span class="style92"><span class="style79">City</span> <span class="style13">*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="style13"><span class="style55">
+    <input name="City" type="text" class="SmallBlack" id="City" size="35">
+    </span> &nbsp;&nbsp;&nbsp;</span></span><span class="style13"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="Reg style88 style68"><span class="style94"> <span class="style79 style68">State</span> *</span></span>
+    <select name="State" class="SmallBlack" id="State">
+      <option selected> </option>
+      <option value="AL">AL</option>
+      <option value="AK">AK</option>
+      <option value="AZ">AZ</option>
+      <option value="AR">AR</option>
+      <option value="CA">CA</option>
+      <option value="CO">CO</option>
+      <option value="CT">CT</option>
+      <option value="DE">DE</option>
+      <option value="DC">DC</option>
+      <option value="FL">FL</option>
+      <option value="GA">GA</option>
+      <option value="HI">HI</option>
+      <option value="ID">ID</option>
+      <option value="IL">IL</option>
+      <option value="IN">IN</option>
+      <option value="IA">IA</option>
+      <option value="KS">KS</option>
+      <option value="KY">KY</option>
+      <option value="LA">LA</option>
+      <option value="ME">ME</option>
+      <option value="MD">MD</option>
+      <option value="MA">MA</option>
+      <option value="MI">MI</option>
+      <option value="MN">MN</option>
+      <option value="MS">MS</option>
+      <option value="MO">MO</option>
+      <option value="MT">MT</option>
+      <option value="NE">NE</option>
+      <option value="NV">NV</option>
+      <option value="NH">NH</option>
+      <option value="NJ">NJ</option>
+      <option value="NM">NM</option>
+      <option value="NY">NY</option>
+      <option value="NC">NC</option>
+      <option value="ND">ND</option>
+      <option value="OH">OH</option>
+      <option value="OK">OK</option>
+      <option value="OR">OR</option>
+      <option value="PA">PA</option>
+      <option value="RI">RI</option>
+      <option value="SC">SC</option>
+      <option value="SD">SD</option>
+      <option value="TN">TN</option>
+      <option value="TX">TX</option>
+      <option value="UT">UT</option>
+      <option value="VT">VT</option>
+      <option value="VA">VA</option>
+      <option value="WA">WA</option>
+      <option value="WV">WV</option>
+      <option value="WI">WI</option>
+      <option value="WY">WY</option>
+    </select>
+    <span class="style23"> <span class="style30"> &nbsp;&nbsp;<span class="style92">Zip</span></span><span class="style92"> *</span></span>
+    <input name="Zip" type="text" class="SmallBlack" id="Zip" size="10">
+  </span></span></span></p>
+  <p><span class="style11 style15"><br>
+      <br>
+      <strong>Contact Information:</strong></span><br>
+    <span class="Small"><span class="style78">How should we contact you if we have questions regarding your order?&nbsp;&nbsp;</span>
+    <label>
+        <select name="Contact" class="SmallBlack" id="Contact">
+          <option value=" " selected> </option>
+          <option value="Email">Email</option>
+          <option value="Phone">Phone</option>
+          <option value="Either">Either</option>
+        </select>
+        <br>
+    </label>
+  </span><span class="Small"><span class="style79"><span class="style2 style23 style88 style68"><span class="style23"><span class="style68">Email Address</span> <span class="style93">*</span></span></span></span>
+  <input name="Email" type="text" id="Email" class="SmallBlack">
+  <span class="Reg style23"><span class="style52">&nbsp;&nbsp;&nbsp; <span class="style109">Phone Number</span></span></span><span class="Reg style41 style88"><span class="style88 style41  style102">&nbsp;</span></span><span class="Reg">&nbsp;&nbsp;
+  <input name="Phone" type="text" class="SmallBlack" id="Phone" size="22">
+  </span></span></p>
+  <p><span class="style11 style15"><br>
+      <br>
+      <strong>Comments:</strong></span><br>
+  <span class="Small">
+  <textarea name="Comments" id="Comments"></textarea>
+  </span></p>
+  <p><span class="style11 style15"><br>
+      <strong>Payment Information:</strong> </span><span class="style68 style79 SmallItallic"><em>(Send check or money order to address below. Product will be shipped upon payment receipt.)</em></span><br>
+    <span class="style76">Voice of the Sea <br />
+P.O. Box 132 <br>
+Plover, WI 54467</span></p>
+  <table width="100%"  border="0" align="center" cellpadding="5" cellspacing="0">
+    
+    <tr id="errorSpanTR" style="display:none;">
+      <td width="100%" colspan="2" class="error"><span id="errorSpan"></span></td>
+    </tr>
+  </table>
+  <br>
+</form>
+<div align="center">
+  <input name="Button2" type="button" class="SmallBlack" onClick="submitForm();" value="Send Form"> 
+  OR 
+  <INPUT NAME="print" TYPE="button" class="SmallBlack"
+ONCLICK="varitext()" VALUE="Print Form">
+  <br>
+  <span class="Small">&nbsp;<span class="style110">Need</span><span class="Reg style68"><em> <span class="style111">Send Form</span> <em>O</em>R <span class="style111">Print Form</span> <strong><em><span class="style68">Explanation</span></em></strong>..................</em></span><span class="style41">&nbsp;<a href="#" onClick="MM_openBrWindow('../Send_Print_Explanation.html','','width=550,height=450')" onMouseOver="MM_swapImage('Click hereII','','../Images/Buttons/Click_Here_Bld.gif',0)" onMouseOut="MM_swapImgRestore()"><img src="../Images/Buttons/Click_Here_Reg.gif" name="Click hereII" width="80" height="17" border="0"></a></span></span><br>
+  <span class="style68"><strong><span class="style62"><strong>Notes:</strong> </span></strong><span class="style62">Fields with an</span><strong><span class="style62"> <span class="style61">*</span> </span></strong><span class="style62">are required. A confirmation email will be forwarded to your email account. Click back arrow or select a link below when done.</span><br>
+  </span><br>
+  <span class="Small"><a href="../index.html">Home</a> | <a href="../Products_And_Rates.html">Products and Rates</a> | <a href="../Contact_Us.html">Contact Us</a></span></div>
+</body>
+</html>

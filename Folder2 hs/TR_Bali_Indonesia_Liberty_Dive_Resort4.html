@@ -1,0 +1,739 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Level_One_SS.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+songNum = new Array();
+songNum[0] = "#";
+songNum[1] = "http://www.voiceofthesea.com/Sounds/BobMarley_IsThisLove.mid";
+songNum[2] = "http://www.voiceofthesea.com/Sounds/Aeroplane.mid";
+songNum[3] = "http://www.voiceofthesea.com/Sounds/Genie_In_A_Bottle.mid";
+songNum[4] = "http://www.voiceofthesea.com/Sounds/How_Blue_Can_You_Get.mid";
+songNum[5] = "http://www.voiceofthesea.com/Sounds/Last_Dance.mid";
+songNum[6] = "http://www.voiceofthesea.com/Sounds/Ramblin_Man.mid";
+songNum[7] = "http://www.voiceofthesea.com/Sounds/Reflection.mid";
+
+var music = null;
+var track = 0;
+var ver = navigator.appName;
+function audioCheck(plugName) {
+for (var i = 0; i < navigator.plugins.length; i++) {
+if (navigator.plugins[i].name.toLowerCase() == plugName.toLowerCase()) {
+for (var j = 0; j < navigator.plugins[i].length; j++) {
+if (navigator.plugins[i][j].enabledPlugin) {
+return true;
+   }
+}
+return false;
+   }
+}
+return false;
+}
+function chooseSong(s) { // ie
+track = s.options[s.selectedIndex].value; 
+if (ver == "Microsoft Internet Explorer") {
+document.all.music.src = songNum[track]; 
+} else {
+songPlay('play');
+   }
+}
+function songPlay(cmd) { // netscape
+if (audioCheck("LiveAudio")) {
+if (cmd == 'play') {
+document.musicSource.play(false, songNum[track]);
+   }
+} else {
+alert("You Do Not Have The Correct Plugin");
+   }
+}
+//  End -->
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function right(e) {
+var msg = "Sorry, all pictures on this site are copyrighted";
+if (navigator.appName == 'Netscape' && e.which == 3) {
+alert(msg);
+return false;
+}
+if (navigator.appName == 'Microsoft Internet Explorer' && event.button==2) {
+alert(msg);
+return false;
+}
+else return true;
+}
+function trap() 
+  {
+  if(document.images)
+    {
+    for(i=0;i<document.images.length;i++)
+      {
+      document.images[i].onmousedown = right;
+      document.images[i].onmouseup = right;
+      }
+    }
+  }
+// End -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var Onerotate_delay = 3000; // delay in milliseconds (5000 = 5 secs)
+Onecurrent = 0;
+var OneLinks = new Array(3);
+OneLinks[0] = "http://www.voiceofthesea.com/Browse_Images.html";
+OneLinks[1] = "http://www.voiceofthesea.com/Browse_Images.html";
+OneLinks[2] = "http://www.voiceofthesea.com/Browse_Images.html";
+function Onenext() {
+if (document.Oneslideform.Oneslide[Onecurrent+1]) {
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent+1].value;
+document.Oneslideform.Oneslide.selectedIndex = ++Onecurrent;
+   }
+else Onefirst();
+}
+function Oneprevious() {
+if (Onecurrent-1 >= 0) {
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent-1].value;
+document.Oneslideform.Oneslide.selectedIndex = --Onecurrent;
+   }
+else Onelast();
+}
+function Onefirst() {
+Onecurrent = 0;
+document.images.Oneshow.src = document.Oneslideform.Oneslide[0].value;
+document.Oneslideform.Oneslide.selectedIndex = 0;
+}
+function Onelast() {
+Onecurrent = document.Oneslideform.Oneslide.length-1;
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent].value;
+document.Oneslideform.Oneslide.selectedIndex = Onecurrent;
+}
+function Oneap(text) {
+document.Oneslideform.Oneslidebutton.value = (text == "Stop") ? "Start" : "Stop";
+Onerotate();
+}
+function Onechange() {
+Onecurrent = document.Oneslideform.Oneslide.selectedIndex;
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent].value;
+}
+function Onerotate() {
+if (document.Oneslideform.Oneslidebutton.value == "Stop") {
+Onecurrent = (Onecurrent == document.Oneslideform.Oneslide.length-1) ? 0 : Onecurrent+1;
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent].value;
+document.Oneslideform.Oneslide.selectedIndex = Onecurrent;
+window.setTimeout("Onerotate()", Onerotate_delay);
+}
+}
+function Onetransport(){
+window.location=OneLinks[Onecurrent]
+}
+//  End -->
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Bali Indonesia Liberty Dive Resort</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:6;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.style14 {color: #000000}
+-->
+</style>
+<style type="text/css">
+</style>
+<style type="text/css">
+</style>
+<style type="text/css">
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+#lyrMainPage {
+	position:absolute;
+	width:925px;
+	height:60px;
+	z-index:1;
+	left: 172px;
+	top: 173px;
+}
+#lyrTop {
+	position:absolute;
+	width:1100px;
+	height:145px;
+	z-index:2;
+	background-image: url(Templates/.);
+	left: -5px;
+	top: 1px;
+}
+#lyrTitle {
+	position:absolute;
+	width:344px;
+	height:64px;
+	z-index:3;
+	left: 100px;
+	top: 11px;
+}
+-->
+</style>
+<link href="Style%20Sheets/KWGSS.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {
+	font-size: xx-large;
+	font-style: italic;
+}
+#lyrSide {
+	position:absolute;
+	width:122px;
+	height:156px;
+	z-index:4;
+	left: 8px;
+	top: 189px;
+}
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:5;
+}
+#lyrTopOfPage {
+	position:absolute;
+	width:15px;
+	height:15px;
+	z-index:5;
+	left: 8px;
+	top: 8px;
+}
+.style5 {font-size: large}
+.style6 {color: #035BA5}
+.style7 {color: #0000FF}
+.style13 {
+	font-size: medium;
+	color: #000000;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.style14 {color: #035ba5; }
+#lyrLine {
+	position:absolute;
+	width:860px;
+	height:8px;
+	z-index:6;
+	top: 146px;
+	left: 0px;
+}
+#lyrBrImages {
+	position:absolute;
+	width:121px;
+	height:211px;
+	z-index:7;
+	top: 271px;
+	left: 28px;
+	visibility: hidden;
+}
+.style16 {color: #035ba5; font-family: Georgia, "Times New Roman", Times, serif; }
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+<body onLoad="trap()"
+ onload="MM_preloadImages('Images/Buttons/Browse_Images_Reg.gif','Images/Buttons/Home_white.gif','Images/Buttons/Browse_Images_white.gif','Images/Buttons/Products_And_Rates_white.gif','Images/Buttons/Links_white.gif','Images/Buttons/Contact_Us_white.gif','Images/Buttons/HomeBold.gif','Images/Buttons/BrowseImagesBold.gif','Images/Buttons/ProductsAndRatesBold.gif','Images/Buttons/LinksBold.gif','Images/Buttons/ContactUsBold.gif','Images/Buttons/Fish_Bold.gif','Images/Buttons/Creatures_Bold.gif','Images/Buttons/Underwater_Scenes_Bold.gif','Images/Buttons/BrowseImagesBold.gif','Images/Buttons/Fish_Bold.gif','Images/Buttons/Creatures_Bold.gif','Images/Buttons/Coral_Sponges_Bold.gif','Images/Buttons/Underwater_Scenes_Bold.gif','Images/Buttons/Fish_Bold.gif','Images/Buttons/TripReportsBold.gif','Images/Buttons/Fish9_Bold.gif','Images/Buttons/Creatures9_Bold.gif','Images/Buttons/CoralSponges9_Bold.gif','Images/Buttons/UnderwaterImages9_Bold.gif','Images/Buttons/BrowseImages/AboveTheSea_BLD.gif','Images/Buttons/BrowseImages/Cephalopods_BLD.gif','Images/Buttons/BrowseImages/Crustaceans_BLD.gif','Images/Buttons/BrowseImages/EelsSeahorses_BLD.gif','Images/Buttons/BrowseImages/Fish_BLD.gif','Images/Buttons/BrowseImages/NudiBranchs_BLD.gif','Images/Buttons/BrowseImages/ScenesCoralSponge_BLD.gif','Images/Buttons/BrowseImages/SeaAnemones_BLD.gif','Images/Buttons/BrowseImages/StarfishFeatherStars_BLD.gif','Images/Buttons/BrowseImages/TurtlesSharksWhales_BLD.gif','Images/Buttons/BrowseImages/Other_BLD.gif''../Images/Buttons/Comments_Bld.gif')">
+<div id="lyrMainPage">
+  <table width="924" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td colspan="2"><!-- InstanceBeginEditable name="EditRegion3" -->
+ 	  <TABLE width="923" border="0" cellpadding="0" cellspacing="0">
+  <TR>
+    <TD>
+      <form name="Oneslideform" >
+        <DIV align="center">
+          <p class="Heading style18"><span class="Heading style6 style17">Bali, Indonesia - Liberty Dive Resort - October - November 2014 </span></p>
+          <TABLE width="657" height="100" border="0" cellspacing="0" cellpadding="0" bordercolor="#ffffff">
+            <TR>
+              <TD bgcolor="#ffffff" class="style18">
+                <DIV align="center" class="Heading style6"></DIV>
+                <DIV align="center" class="Reg"><B><br />
+                </DIV>                </TD>
+            </TR>
+            <TR>
+              <TD bgcolor="#ffffff" class="style18">
+                <DIV align="center"><A href="javascript:Onetransport()"><IMG src="Images/TripReports/Bali2014SS/001-Pygmy-Seahorse.jpg" width="625" height="468" name="Oneshow" border="0"></A></DIV>              </TD>
+            </TR>
+            <TR>
+              <TD bgcolor="#ffffff" class="style18">
+                <DIV align="center">
+                  <SELECT name="Oneslide" class="SmallBlack" onChange="Onechange();">
+				    <OPTION value="Images/TripReports/Bali2014SS/001-Pygmy-Seahorse.jpg"  selected>001 Pygmy Seahorse</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/002-Emperor-Angelfish.jpg">002 Emperor Anglefish</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/003-Emperor-Angelfish-Juven.jpg">003 Emperor Angelfish Juvenile</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/004-Robust-Ghost-Pipefish.jpg">004 Robust Ghost Pipefish</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/005-Liberty-Wreck-Scene.jpg">005 Liberty Wreck Scene</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/006-Spiny-Tiger-Shrimp.jpg">006 Spiny Tiger Shrimp</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/007-Soft-Corals.jpg">007 Soft Corals</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/008-Collingwood-Chromodoris.jpg">008 Collingwood Chromodoris</OPTION>
+					
+					<OPTION value="Images/TripReports/Bali2014SS/009-Black-Spotted-Moray.jpg">009 Black Spotted Moray</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/010-Goby-on-Whip-Coral.jpg">010 Goby on Whip Coral</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/011-Ghost-Fish.jpg">011 Ghost Fish</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/012-Giant-Clam.jpg">012 Giant Clam</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/013-Fish-Attitude.jpg">013 Fish Attitude</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/014-Juvenile-Frogfish.jpg">014 Juvenile rogfish</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/015-Tunicates.jpg">015 Tunicates</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/016-Unknown.jpg">016 Unknown</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/017-Frogfish-Face.jpg">017 Frogfish Face</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/018-Dark-Margin-Chromodoris.jpg">018 Dark Margin Chromodoris</OPTION>C
+					<OPTION value="Images/TripReports/Bali2014SS/019-Hawksbill-Turtle.jpg">019 Hawksbill Turtle</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/020-Soft-Coral-Crab.jpg">020 Soft Coral Crab</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/021-Corallimorph-Open.jpg">021-Corallimorph-Open</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/022-Corallimorph-Closed.jpg">022 Corallimorph losed</OPTION>
+			        <OPTION value="Images/TripReports/Bali2014SS/023-Bulb-Tunicate.jpg">023 Bulb Tunicate</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/024-Squat-Lobster.jpg">024 Squat Lobster</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/025-Camouflaged-Frogfish.jpg">025 Camouflaged Frogfish</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/026-Anchors-Shrimp.jpg">026 Anchors Shrimp</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/027-Hiding-Hawkfish.jpg">027 Hiding Hawkfish</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/028-Hairy-Frogfish-Juvenile.jpg">028 Hairy Frogfish Juvenilexx</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/029-Squat-Lobster.jpg">029 Squat Lobster</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/030-Girdled-Glossodoris.jpg">030 Girdled Glossodoris</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/031-Coral-Macro.jpg">031 Coral Macroxx</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/032-Frogfish-Lure.jpg">032 Frogfish Lurexx</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/033-Wrapping-Anemone.jpg">033 Wrapping Anemone</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/034-Mexichromis-Laying-Eggs.jpg">034 Mexichromis Laying Eggs</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/035-Apricot-Side-Gill-Slug.jpg">035 Apricot Side-Gill Slug</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/036-Coral-Scene.jpg">036 Coral Scene</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/037-Pink-Eared-Mantis.jpg">037 Pink Eared Mantis</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/038-Sea-Cucumber.jpg">038 Sea Cucumber</OPTION>
+					<OPTION value="Images/TripReports/Bali2014SS/039-Nudibranchs.jpg">039 Nudibranchs</OPTION>
+					</SELECT>
+      </DIV>              </TD>
+            </TR>
+            <TR>
+              <TD bgcolor="#ffffff" class="style18">
+                
+                <div align="center">
+                                   <INPUT type=button class="SmallBlack" title="Previous" onClick="Oneprevious();" value="&lt;&lt; ">
+                    <INPUT name="Oneslidebutton" type=button class="SmallBlack" title="AutoPlay" onClick="Oneap(this.value);" value="Start">
+                    <INPUT type=button class="SmallBlack" title="Next" onClick="Onenext();" value="&gt;&gt;">
+                  
+                    <br />
+                    <br />
+                </div></TD></TR>
+          </TABLE>
+        </DIV>
+      </form>
+    </TD>
+  </TR>
+</TABLE>
+	  <center>
+<form name=choose>
+  <table width="916">
+    <tr></tr>
+    <tr>
+      <td class="Reg">Always the worst part -- the long and arduous trip to the other side of the world.&nbsp; My flight schedule from Wisconsin to San Francisco was changed leaving me with nearly 11 hours of airport wait time.&nbsp; These are the times when I'm very grateful for technology:&nbsp; an iPAD, an iPOD, some people-watching, a few corridor walks, dinner and a glass of wine, and it's time to hunt for my travel companions.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="Images/TripReports/Bali2014/01.jpg" width="600" height="450" /></div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="Reg">We continue to fly with China Air.&nbsp; The price is right, and we are treated well and fly comfortably.&nbsp; Our flight departs at 1:00 in the morning.&nbsp; Perhaps as an attempt to realign our body clocks, the first order of business is a meal.&nbsp; I followed that with 3 oz. of red wine and an Ambien and slept peacefully until our descent into Taipei.&nbsp; That trick didn't work on the way home, but it was a welcome treat on this leg of the trip.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="Images/TripReports/Bali2014/02.jpg" width="600" height="274" /></div></td>
+    </tr>
+    <tr>
+      <td class="RegM1"><div align="center">No easy task finding our driver in Denpasar.</div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="Reg">Once again we are staying at Liberty Dive Resort in Tulamben, Bali.&nbsp; Three years ago during our stay, Liberty Resort was beginning its expansion project.&nbsp; We returned to the project completed with fabulous results.&nbsp;&nbsp; The resort has tripled in size, is beautiful, well-staffed, and well-run.&nbsp; All of our creature needs were more than satisfied.&nbsp; We treated ourselves to $10 massages at least every other day.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="Images/TripReports/Bali2014/03.jpg" width="500" height="375" /></div></td>
+    </tr>
+    <tr>
+      <td><div align="center"><strong class="RegM1">Sweet Bungalows; beautiful gardens</strong></div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="Images/TripReports/Bali2014/04.jpg" width="500" height="375" /></div></td>
+    </tr>
+    <tr>
+      <td><div align="center"><strong class="RegM1">Massage tables overlooking the pool.</strong></div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="Reg">The dive operation is well-managed, and the dive guides are eager to please.&nbsp; Yoman, our guide, was delightful and worked diligently to locate all the wonderful critters that we encountered.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><table width="916">
+        <tr>
+          <td><div align="left"><img src="Images/TripReports/Bali2014/05.jpg" width="444" height="333" /></div></td>
+          <td><div align="right"><img src="Images/TripReports/Bali2014/06.jpg" width="444" height="333" /></div></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="Images/TripReports/Bali2014/07.jpg" width="600" height="395" /></div></td>
+    </tr>
+    <tr>
+      <td><div align="center"><strong class="RegM1">Yoman and his motley crew!</strong></div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="RegM1">November begins the rainy season in Bali, but we were blessed with sunshine each day, along with pleasant, high temperatures which dropped nicely towards dusk, and gentle breezes.&nbsp; All of our dives were shore dives; no boats this trip.&nbsp; The seas were calm for the most part; current generally mild.&nbsp;&nbsp; We did take note that shore entries over slippery, large, uneven rocks (as we were burdened with weights, air tanks, fins, and photo equipment) are becoming a bit much as we approach the next decade of our lives.&nbsp; Oh, we did fine.&nbsp; No major wipe-outs or embarrassing crawls back to shore.&nbsp; But it's tricky, even with our wonderful Yoman, who can balance his own equipment, us, and another's gear without blinking!</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><table width="916">
+        <tr>
+          <td width="410"><img src="Images/TripReports/Bali2014/08.jpg" width="410" height="330" /></td>
+          <td width="80">&nbsp;</td>
+          <td width="410"><img src="Images/TripReports/Bali2014/08a.jpg" width="410" height="330" /></td>
+        </tr>
+        <tr>
+          <td><div align="center"><strong class="RegM1">Early Morning Calm</strong></div></td>
+          <td>&nbsp;</td>
+          <td><div align="center"><strong class="RegM1">Shore entries can be difficult with dive gear and cameras.</strong></div></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><img src="Images/TripReports/Bali2014/09.jpg" width="410" height="330" /></td>
+          <td>&nbsp;</td>
+          <td><img src="Images/TripReports/Bali2014/10a.jpg" width="410" height="330" /></td>
+        </tr>
+        <tr>
+          <td><div align="center"><strong class="RegM1">The surf picks up as the day progresses.</strong></div></td>
+          <td>&nbsp;</td>
+          <td><div align="center"><strong class="RegM1">And even the younger folks struggle.</strong></div></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="Reg">The muck diving was wonderful, as we've come to expect; and the creatures were ample, colorful, and entertaining.&nbsp; Nudibranchs were everywhere and depositing egg ribbons for our enjoyment.&nbsp; Mantis shrimp were flaunting large masses of eggs held tight to their bellies,&nbsp; and a ribbon eel swam out of its burrow allowing us to see how it came by its name.&nbsp; Well, some of us only got to see it on George's video, but it was still very cool.&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="Reg">After our weeks of diving, we spent a few off-gassing days in Keliki and Ubud where we enjoyed the flavors of the Island, the Balinese culture, and the inviting Balinese people.&nbsp; A village tour, beautiful, unaffected Balinese children, &nbsp;a 5-hour Balinese cooking/dining experience &nbsp;(not to be missed), purchases from a traditional Balinese Art School, hours of pool floating, and decadent massages.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><table width="916">
+        <tr>
+          <td width="435"><img src="Images/TripReports/Bali2014/11.jpg" width="435" height="580" /></td>
+          <td width="26" colspan="2">&nbsp;</td>
+          <td width="435"><img src="Images/TripReports/Bali2014/12.jpg" width="430" height="580" /></td>
+        </tr>
+        <tr>
+          <td><div align="center"><strong class="RegM1">Trust me, it's a lot harder than it looks to make a seasoning<br />
+            paste from raw vegetables and spices!</strong></div></td>
+          <td colspan="2">&nbsp;</td>
+          <td><div align="center"><strong class="RegM1">Cooking is done in the morning, and the meal is served&nbsp;<br />
+            throughout the day.</strong></div></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="2">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><img src="Images/TripReports/Bali2014/13.jpg" width="435" height="326" /></td>
+          <td colspan="2">&nbsp;</td>
+          <td><img src="Images/TripReports/Bali2014/14.jpg" width="435" height="326" /></td>
+        </tr>
+        <tr>
+          <td height="25" colspan="4"><div align="center"><strong class="RegM1">Our ever-smiling teachers were patient and supportive as we made our bungling attempts to wrap tofu into palm-leaf envelopes for grilling.</strong></div></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="2">&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><img src="Images/TripReports/Bali2014/15.jpg" width="435" height="580" /></td>
+          <td colspan="2">&nbsp;</td>
+          <td><img src="Images/TripReports/Bali2014/16.jpg" width="435" height="580" /></td>
+        </tr>
+        <tr>
+          <td><div align="center"><strong class="RegM1">George is now the proud owner of two lovely pieces of <br />
+            Traditional
+            Balinese Art.</strong></div></td>
+          <td colspan="2">&nbsp;</td>
+          <td><div align="center"><strong class="RegM1">Skin is carefully protected from the sun during long days in<br /> 
+            the
+            rice paddies.</strong></div></td>
+        </tr>
+        
+      </table></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><div align="center"><img src="Images/TripReports/Bali2014/17.jpg" width="600" height="450" /></div></td>
+    </tr>
+    <tr>
+      <td><div align="center"><strong class="RegM1">Spines are straight, and necks are strong and erect from carrying heavy loads atop the head.</strong></div></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><table width="916">
+        <tr>
+          <td width="600" height="21"><img src="Images/TripReports/Bali2014/18.jpg" width="600" height="450" /></td>
+          <td width="304">&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="21" class="RegM1"><div align="center"><strong>The Temple was bustling with activity as preparations were made for a religious ceremony.</strong></div></td>
+          <td>&nbsp;</td>
+        </tr>
+      </table></td>
+    </tr>
+    
+
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><table width="916">
+        <tr>
+          <td width="444">&nbsp;</td>
+          <td width="460"><img src="Images/TripReports/Bali2014/18a.jpg" width="460" height="517" /></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><div align="center"><strong class="RegM1">And warm embraces were shared with others far from home.</strong></div></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="Reg">And the children: the beautiful children..........................</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><table width="916">
+        <tr>
+          <td><img src="Images/TripReports/Bali2014/19.jpg" width="435" height="580" /></td>
+          <td><div align="right"><img src="Images/TripReports/Bali2014/20.jpg" width="435" height="580" /></div></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="Reg">They have ready smiles and a surprisingly serene nature, with no evidence of disorders of attention. Their playground is the beach, the ocean, the fields; their toys the pebbles, palms and sand.&nbsp; A sense of calm, peacefulness, and joy seems to surround them.</td>
+          </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td><img src="Images/TripReports/Bali2014/21.jpg" width="435" height="628" /></td>
+          <td><div align="right"><img src="Images/TripReports/Bali2014/22.jpg" width="435" height="628" /></div></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td colspan="2"><div align="center"><img src="Images/TripReports/Bali2014/23.jpg" width="435" height="529" /></div></td>
+          </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="55" colspan="2"><span class="Reg">So, there you have it.&nbsp; Another memorable trip; perfect, except for the absence of our third Gill-Sister, Carolyn. </span>
+            <p class="Reg">Next time................</p></td>
+          </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <div align="left"></div>
+  </form>
+
+<div align="left">
+
+    <script language="JavaScript">
+<!-- Begin
+var ver = navigator.appName;
+if (ver == "Microsoft Internet Explorer") {
+document.write('<bgsound src="#" ID=music loop=9 AUTOSTART=true>');
+} else {
+document.write('<embed type="audio/midi" src="aeroplane.mid" AUTOSTART=false hidden=true VOLUME="90" name="musicSource" MASTERSOUND></EMBED>');
+}
+// End -->
+  </script>
+    <p class="Reg"><br />
+      </p>
+    </div>
+</center>
+      <!-- InstanceEndEditable --></td>
+    </tr>
+    <tr>
+      <td width="450" class="Small">&nbsp;</td>
+      <td width="474" class="Small"><div align="left"><a href="#Top" class="style14">Top</a></div>
+      <div align="left"></div></td>
+    </tr>
+  </table>
+</div>
+<div id="lyrTop">
+  <div align="left"><img src="Images/Coral_Top_01.jpg" width="1100" height="153" /></div>
+  <div align="right"></div>
+</div>
+<div class="Heading style1" id="lyrTitle">
+  <p align="center"><span class="style6"><span class="style7"><strong>    <span class="style16">Voice of the Sea</span><span class="style5"><br />
+  </span></strong><span class="style13">by <br />
+  Vivian </span></span></span> </p>
+</div>
+<div id="lyrSide">
+  <table width="120" border="0" cellspacing="0">
+    <tr>
+      <td><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Home','','Images/Buttons/Home_white.gif',1)"></a><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Home','','Images/Buttons/HomeBold.gif',1)"><img src="Images/Buttons/HomeReg.gif" name="Home" width="129" height="30" border="0" id="Home" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Browse_Images','','Images/Buttons/Browse_Images_Reg.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><img src="Images/Buttons/BrowseImagesReg.gif" name="BrowseImages" width="129" height="30" border="0" id="BrowseImages" onclick="MM_showHideLayers('lyrMainPage','','inherit','lyrBrImages','','show')" onmouseover="MM_swapImage('BrowseImages','','Images/Buttons/BrowseImagesBold.gif',1)" onmouseout="MM_showHideLayers('lyrBrImages','','hide');MM_swapImgRestore()" /><a href="Browse_Images.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Browse Images','','Images/Buttons/Browse_Images_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Trip_Reports.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Trip Reports','','Images/Buttons/TripReportsBold.gif',1)"><img src="Images/Buttons/TripReportsReg.gif" name="Trip Reports" width="129" height="30" border="0" id="Trip Reports" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Comments.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Comments','','Images/Buttons/Comments_Bld.gif',1)"><img src="Images/Buttons/Comments_Reg.gif" name="Comments" width="128" height="31" border="0" id="Comments" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td><a href="Links.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Links','','Images/Buttons/LinksBold.gif',1)"><img src="Images/Buttons/LinksReg.gif" name="Links" width="129" height="30" border="0" id="Links" /></a><a href="Links.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Links','','Images/Buttons/Links_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Contact_Us.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('ContactUs','','Images/Buttons/ContactUsBold.gif',1)"><img src="Images/Buttons/ContactUsReg.gif" name="ContactUs" width="129" height="30" border="0" id="ContactUs" /></a><a href="Contact_Us.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Contact Us','','Images/Buttons/Contact_Us_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="lyrBrImages" onmouseover="MM_showHideLayers('lyrBrImages','','show')" onmouseout="MM_showHideLayers('lyrBrImages','','hide')"><a href="Browse_Images_Above_the_Sea.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Above the Sea','','Images/Buttons/BrowseImages/AboveTheSea_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/AboveTheSea_REG.gif" name="Above the Sea" width="182" height="19" border="0" id="Above the Sea" /></a><a href="Browse_Images_Cephalopods.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Cephalopods','','Images/Buttons/BrowseImages/Cephalopods_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Cephalopods_REG.gif" name="Cephalopods" width="182" height="19" border="0" id="Cephalopods" /></a><a href="Browse_Images_Fish.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Fish','','Images/Buttons/Fish9_Bold.gif',1)"><br />
+</a><a href="Browse_Images_Crustaceans.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Crustaceans','','Images/Buttons/BrowseImages/Crustaceans_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Crustaceans_REG.gif" name="Crustaceans" width="182" height="19" border="0" id="Crustaceans" /></a><a href="Browse_Images_Creatures.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Creatures','','Images/Buttons/Creatures9_Bold.gif',1)"><br />
+</a><a href="Browse_Images_Eels_Seahorses.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Eels - Seahorses','','Images/Buttons/BrowseImages/EelsSeahorses_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/EelsSeahorses_REG.gif" name="Eels - Seahorses" width="182" height="19" border="0" id="Eels - Seahorses" /></a><a href="Browse_Images_Fish.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Fish','','Images/Buttons/BrowseImages/Fish_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Fish_REG.gif" name="Fish" width="182" height="19" border="0" id="Fish" /></a><a href="Browse_Images_Nudibranchs.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Nudibranchs','','Images/Buttons/BrowseImages/NudiBranchs_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/NudiBranchs_REG.gif" name="Nudibranchs" width="182" height="19" border="0" id="Nudibranchs" /></a><a href="Browse_Images_Scenes_Coral_Sponge.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Scenes - Coral - Sponge','','Images/Buttons/BrowseImages/ScenesCoralSponge_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/ScenesCoralSponge_REG.gif" name="Scenes - Coral - Sponge" width="182" height="19" border="0" id="Scenes - Coral - Sponge" /></a><a href="Browse_Images_Sea_Anemones.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Sea Anemones','','Images/Buttons/BrowseImages/SeaAnemones_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/SeaAnemones_REG.gif" name="Sea Anemones" width="182" height="19" border="0" id="Sea Anemones" /></a><a href="Browse_Images_Starfish_Feather_Stare.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Starfish - Feather Stars','','Images/Buttons/BrowseImages/StarfishFeatherStars_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/StarfishFeatherStars_REG.gif" name="Starfish - Feather Stars" width="182" height="19" border="0" id="Starfish - Feather Stars" /></a><a href="Browse_Images_Turtles_Sharks_Whales.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Turtles - Sharks - Whales','','Images/Buttons/BrowseImages/TurtlesSharksWhales_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/TurtlesSharksWhales_REG.gif" name="Turtles - Sharks - Whales" width="182" height="19" border="0" id="Turtles - Sharks - Whales" /></a><a href="Browse_Images_Other.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Other','','Images/Buttons/BrowseImages/Other_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Other_REG.gif" name="Other" width="182" height="19" border="0" id="Other" /></a></div>
+<div id="lyrTopOfPage"></div>
+<a name="Top" id="Top"></a>
+</body>
+<!-- InstanceEnd --></html>

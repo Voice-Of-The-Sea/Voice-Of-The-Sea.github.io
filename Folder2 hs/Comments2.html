@@ -1,0 +1,533 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Level_One_Test.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+
+
+<script language="JavaScript1.1">
+<!--
+/*JavaScript Image slideshow:*/
+
+var slideimages=new Array()
+var slidelinks=new Array()
+
+function slideshowimages(){
+  for (i=0;i<slideshowimages.arguments.length;i++){
+  slideimages[i]=new Image()
+  slideimages[i].src=slideshowimages.arguments[i]
+  }
+}
+
+function slideshowlinks(){
+  for (i=0;i<slideshowlinks.arguments.length;i++)
+  slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+  if (!window.winslide||winslide.closed)
+    winslide=window.open(slidelinks[whichlink])
+  else
+    winslide.location=slidelinks[whichlink]
+    winslide.focus()
+}
+//-->
+</script>
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Comments Page Two</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:6;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.style14 {
+	color: #FF0000;
+	font-style: italic;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: smaller;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.style16 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FF0000;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.style24 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #035BA5;
+	font-style: italic;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.style26 {color: #000000}
+-->
+</style>
+<style type="text/css">
+<!--
+.style27 {color: #035BA5; font-family: Georgia, "Times New Roman", Times, serif;}
+-->
+</style>
+<style type="text/css">
+<!--
+.style28 {font-family: Georgia, "Times New Roman", Times, serif}
+-->
+</style>
+<style type="text/css">
+<!--
+.style29 {	color: #FF0000;
+	font-style: italic;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: smaller;
+}
+.style29 {color: #035ba5}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+#lyrMainPage {
+	position:absolute;
+	width:686px;
+	height:60px;
+	z-index:1;
+	left: 185px;
+	top: 173px;
+}
+#lyrTop {
+	position:absolute;
+	width:860px;
+	height:145px;
+	z-index:2;
+	background-image: url(Images/Coral_Top_01.jpg);
+	left: 0px;
+	top: 1px;
+}
+#lyrTitle {
+	position:absolute;
+	width:344px;
+	height:64px;
+	z-index:3;
+	left: -35px;
+	top: 11px;
+}
+-->
+</style>
+<link href="Style%20Sheets/KWGSS.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {
+	font-size: xx-large;
+	font-style: italic;
+}
+#lyrSide {
+	position:absolute;
+	width:122px;
+	height:156px;
+	z-index:4;
+	left: 8px;
+	top: 189px;
+}
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:5;
+}
+#lyrTopOfPage {
+	position:absolute;
+	width:15px;
+	height:15px;
+	z-index:5;
+	left: 8px;
+	top: 8px;
+}
+.style5 {font-size: large}
+.style6 {color: #035BA5}
+.style7 {color: #0000FF}
+.style13 {
+	font-size: medium;
+	color: #000000;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.style14 {color: #035ba5}
+#lyrLine {
+	position:absolute;
+	width:860px;
+	height:8px;
+	z-index:6;
+	top: 146px;
+	left: 0px;
+}
+.style15 {font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; color: #000099; font-family: Arial, Helvetica, sans-serif;}
+.style16 {
+	color: #035B9B;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#lyrBrImage {
+	position:absolute;
+	width:121px;
+	height:73px;
+	z-index:7;
+	left: 28px;
+	top: 269px;
+	background-color: #FFFFFF;
+	visibility: hidden;
+}
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function Login(){
+var done=0;
+var username=document.login.username.value;
+username=username.toLowerCase();
+var password=document.login.password.value;
+password=password.toLowerCase();
+if (username=="roatan" && password=="february2010") { window.location="MembersPageOne.html"; done=1; }
+if (username=="roatan" && password=="august2010") { window.location="MembersPageTwo67778812.html"; done=1; }
+if (username=="roatan" && password=="february2011") { window.location="MembersPageThree091245662.html"; done=1; }
+if (username=="weston" && password=="july2011") { window.location="MembersPageFour77781256_92.html"; done=1; }
+if (username=="weberfamily" && password=="july2011") { window.location="MembersPageFive67342187_89.html"; done=1; }
+if (username=="roatan" && password=="february2012") { window.location="MembersPageSix99981277_67.html"; done=1; }
+if (done==0) { alert("Invalid login!"); }
+}
+// End -->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+NewImg = new Array (
+"Images/TripReports/CoCoView/Anemone.jpg",
+"Images/TripReports/CoCoView/Azure-Vase-Sponge.jpg",
+"Images/TripReports/CoCoView/Barracuda-Bite.jpg",
+"Images/TripReports/CoCoView/Blenny.jpg",
+"Images/TripReports/CoCoView/Blenny-in-Full-View.jpg",
+"Images/TripReports/CoCoView/Butter-Hamlet.jpg",
+"Images/TripReports/CoCoView/Cleaning-Station.jpg",
+"Images/TripReports/CoCoView/Coral-Inner-Sanctum.jpg",
+"Images/TripReports/CoCoView/Coral-Polyps.jpg",
+"Images/TripReports/CoCoView/Coral-Rod.jpg",
+"Images/TripReports/CoCoView/Cowfish.jpg",
+"Images/TripReports/CoCoView/Crinoid-Shrimp.jpg",
+"Images/TripReports/CoCoView/Flounder-Eyes.jpg",
+"Images/TripReports/CoCoView/Flounder-on-the-Rise.jpg",
+"Images/TripReports/CoCoView/Flounder-on-the-Rise-2.jpg",
+"Images/TripReports/CoCoView/Friendly-Remora.jpg",
+"Images/TripReports/CoCoView/Goatfish-Gathering.jpg",
+"Images/TripReports/CoCoView/Goldentail-Moray.jpg",
+"Images/TripReports/CoCoView/Gorgonian-Hydroid.jpg",
+"Images/TripReports/CoCoView/Green-Moray.jpg",
+"Images/TripReports/CoCoView/Green-Moray-2.jpg",
+"Images/TripReports/CoCoView/Grouper.jpg",
+"Images/TripReports/CoCoView/Hydroid.jpg",
+"Images/TripReports/CoCoView/Indigo-Hamlet.jpg",
+"Images/TripReports/CoCoView/Lizardfish-.jpg",
+"Images/TripReports/CoCoView/Nurse-Shark-Eye.jpg",
+"Images/TripReports/CoCoView/Orange-Cup-Coral.jpg",
+"Images/TripReports/CoCoView/Pretty-in-Pink.jpg",
+"Images/TripReports/CoCoView/Red-Hind.jpg",
+"Images/TripReports/CoCoView/Red-White-and-Blue.jpg",
+"Images/TripReports/CoCoView/Saddle-Blenny.jpg",
+"Images/TripReports/CoCoView/Scorpianfish.jpg",
+"Images/TripReports/CoCoView/Seahorse-1-of-5.jpg",
+"Images/TripReports/CoCoView/Seahorse-2-of-5.jpg",
+"Images/TripReports/CoCoView/Seahorse-3-of-5.jpg",
+"Images/TripReports/CoCoView/Seahorse-4-of-5.jpg",
+"Images/TripReports/CoCoView/Seahorse-5-of-5.jpg",
+"Images/TripReports/CoCoView/Shark.jpg",
+"Images/TripReports/CoCoView/Sharptail-Eel-oin-the-Hunt.jpg",
+"Images/TripReports/CoCoView/Sharptail-Puffer-Face.jpg",
+"Images/TripReports/CoCoView/Shy-Seahorse.jpg",
+"Images/TripReports/CoCoView/Slender-Filefish.jpg",
+"Images/TripReports/CoCoView/Solitude.jpg",
+"Images/TripReports/CoCoView/Spinyhead-Blenny.jpg",
+"Images/TripReports/CoCoView/Spotted-Moray.jpg",
+"Images/TripReports/CoCoView/Spotted-Trunkfish.jpg",
+"Images/TripReports/CoCoView/Swimming.jpg",
+"Images/TripReports/CoCoView/Swimming-Crinoid.jpg",
+"Images/TripReports/CoCoView/Toadfish-Face.jpg",
+"Images/TripReports/CoCoView/Toadfish-Full-Body.jpg",
+"Images/TripReports/CoCoView/Triplefin-Blenny.jpg",
+"Images/TripReports/CoCoView/Trumpetfish.jpg",
+"Images/TripReports/CoCoView/Upside-Down-Jellyfish.jpg",
+"Images/TripReports/CoCoView/Wary-Grouper.jpg",
+"Images/TripReports/Spawn/Standing_At_Attention.jpg",
+"Images/TripReports/Spawn/Tigertail_Spawn.jpg",
+"Images/TripReports/Spawn/Tigertail_Spawn_Macro.jpg",
+"Images/TripReports/CoCoView/Yellowhead-Jawfish.jpg"
+);
+var ImgNum = 0;
+var ImgLength = NewImg.length - 1;
+
+//Time delay between Slides in milliseconds
+var delay = 3000;
+
+var lock = false;
+var run;
+function chgImg(direction) {
+if (document.images) {
+ImgNum = ImgNum + direction;
+if (ImgNum > ImgLength) {
+ImgNum = 0;
+}
+if (ImgNum < 0) {
+ImgNum = ImgLength;
+}
+document.slideshow.src = NewImg[ImgNum];
+   }
+}
+function auto() {
+if (lock == true) {
+lock = false;
+window.clearInterval(run);
+}
+else if (lock == false) {
+lock = true;
+run = setInterval("chgImg(1)", delay);
+   }
+}
+//  End -->
+</script>
+
+</head>
+<body onload="MM_preloadImages('Images/Buttons/Browse_Images_Reg.gif','Images/Buttons/Home_white.gif','Images/Buttons/Browse_Images_white.gif','Images/Buttons/Links_white.gif','Images/Buttons/Contact_Us_white.gif','Images/Buttons/HomeBold.gif','Images/Buttons/LinksBold.gif','Images/Buttons/ContactUsBold.gif','Images/Buttons/BrowseImagesBold.gif','Images/Buttons/TripReportsBold.gif','Images/Buttons/Fish9_Bold.gif','Images/Buttons/Creatures9_Bold.gif','Images/Buttons/BrowseImages/AboveTheSea_BLD.gif','Images/Buttons/BrowseImages/Cephalopods_BLD.gif','Images/Buttons/BrowseImages/Crustaceans_BLD.gif','Images/Buttons/BrowseImages/EelsSeahorses_BLD.gif','Images/Buttons/BrowseImages/Fish_BLD.gif','Images/Buttons/BrowseImages/NudiBranchs_BLD.gif','Images/Buttons/BrowseImages/ScenesCoralSponge_BLD.gif','Images/Buttons/BrowseImages/SeaAnemones_BLD.gif','Images/Buttons/BrowseImages/StarfishFeatherStars_BLD.gif','Images/Buttons/BrowseImages/TurtlesSharksWhales_BLD.gif','Images/Buttons/BrowseImages/Other_BLD.gif','Images/Buttons/TripReports2Bold.gif')">
+<div id="lyrMainPage">
+  <table width="686" border="0">
+    <tr>
+      <td colspan="2"><!-- InstanceBeginEditable name="EditRegion3" -->
+        <div align="center" class="Heading style14">Comments </div>
+        <table width="664" border="0" class="Regp1">
+          <tr>
+            <td width="658" valign="top" class="Regp1">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="975" valign="top" class="Regp1"><hr size="4" noshade="noshade" />
+              <p><span class="Reg">&quot;Vivian  - It must hit you about one week after you return from a diving trip that <em>you  cannot wait to return</em>.&nbsp; What a fabulous love affair.&nbsp; Your energy  and enthusiasm is contagious, to say nothing of the fabulous photos.&nbsp; You  do have a gift.&nbsp; Love your clever and amusing descriptions as I often have  no idea what I am looking at or its incredibly diminutive size.&nbsp; I am the  proud owner of a number of your pieces of work and delight in your adventures.<em>&nbsp; </em>My, what I am  missing.&nbsp; You have my admiration and respect.&nbsp; Thanks for sharing  your unique world &hellip;<em>because  I don&rsquo;t even like putting my face in water!&quot;</em><br />
+                    <br />
+              </span><span class="Reg">Kathleen S.</span></p>
+              <hr size="4" noshade="noshade" />
+              <p><span class="Reg">Vivian, Your pictures  on the website are great. I've seen the pictures you have at Mountain Bay  Scuba in Appleton, WI. The pictures look even better in person. Someday I hope  to take picture like you. Keep the pictures coming so I can view the places  thru your eyes! </span></p>
+              <p><span class="Reg">Royal B.</span></p>
+              <hr size="4" noshade="noshade" />
+              <p><span class="Reg">Your photos are just amazing. You are able to capture the  little things that many of us overlook. I have shared your website with many of  my friends and coworkers so that they could have an idea of what is down-under.  I have also purchased one of your photos which now hangs in my home that I can  enjoy everyday. Thank you so much for sharing your visions of the sea.<br />
+                <br />
+              Patrick S.</span></p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">Hi Viv, Thank you for  those fantastic pictures. 
+              I missed diving last year (1st in 38 yrs). Through  these pics I felt like I was there with you again. Sure enjoyed them. They are  my treat during the day when I need a lift..keep it up. Your buddy, That 79  year old mermaid. (whoops, 80) </span></p>
+            <p class="Reg">Betty Schaefer </p>
+            <hr size="4" noshade="noshade" />
+            <p>Vivian,</p>
+            <p class="Reg">Thanks for posting your  photos and trip reports!</p>
+              <p class="Reg">My wife Janna and I were  there (Roatan) the same time as you.&nbsp; I remember you showing us your  awesome eagle ray photo the day you took it.&nbsp; I was particularly pleased  to see your photo of the wire coral shrimp.&nbsp; We tried, but just didn't get  one that was in focus.</p>
+              <p><span class="Reg">Larry Bereuter</span>
+              <hr size="4" noshade="noshade" />
+              <span class="Regp1 style14"><br />
+              </span><span class="Reg">I just took a little pleasant detour from my day to look at  your website.&nbsp; The things you saw in Indonesia are the most beautiful,  colorful, interesting creatures I have ever seen in my life.&nbsp; Just when I  thought I had seen my favorite, another picture would turn up.&nbsp; What a  talented photographer you are (why are you not earning millions on your shots,  many so much better than the shots in dive magazines that I get)?&nbsp; (: </span>
+              <p class="Reg">I especially liked the artfully taken 3 pics of the starfish  from all of it to the incredible detailed shot; so many beautiful varieties of  them also as well as shrimps.&nbsp; I also really liked the Clark Anemone fish  peaking out the back of of eggs are they or a type of sea life?&nbsp;The mantis  shrimp with the eggs, I could go on&nbsp;and on.&nbsp; There were other  creatures you had, also quite beautiful that I didn't even know existed like  the chromodoris varieties.&nbsp; What a difference in sea life from the  Caribbean.</p>
+              <p class="Reg">Thanks!<br />
+              Susan Hamilton              </p>
+              <hr size="4" noshade="noshade" />
+              <br />
+              <span class="Reg">Vivian, we've never  met but its pretty likely that we've crossed paths&nbsp;at CoCo View in the  past.&nbsp;I am Terry Evans, owner of Roatan Charter Inc, the travel wholesale  and reservations company that has handled CoCo View since its inception. You  probably met my parents, Bill and Evelyn Evans, the original owners of the  resort. </span>
+              <p class="Reg">I was at the  resort this past Jan and Feb when&nbsp;you&nbsp;were there and intended to  touch base and run an idea by you.&nbsp;&nbsp;Obviously that didn't happen, so  here goes. </p>
+              <p class="Reg">I've been an  admirer of your photography for quite some time.&nbsp;&nbsp;My Scuba Travel  catalog is now in production and is going to run between 12 and 24 pages  depending on the final layout. We distribute about 5,000 each year of the  brochures through direct mail and at our booth at all the major scuba shows  around the country. I'd like the next issue (which we'll distribute for 2  years, about 10,000 copies) &nbsp;to feature&nbsp;one nice underwater image on  each page.&nbsp;&nbsp;</p>
+              <p class="Reg">If you would  be willing to provide the underwater photos, I can feature you as the issue's  photographer and run a biography and promotional that directs people to your  web site and any products services that you wish to promote.&nbsp; </p>
+              <p class="Reg">If you like  the idea, give me a call or email and we can move more into the details.</p>
+              <p class="Reg">All the Best,<br />
+              Terry E.</p>
+              <hr size="4" noshade="noshade" />              <a href="http://www.facebook.com/media/set/?set=a.2864035691769.2110906.1586043774&amp;type=1&amp;comment_id=3006964&amp;offset=0&amp;total_comments=10"><br />
+              </a><span class="Reg">These pictures are amazing Viv,  you&acute;re such a pro :)<br />
+              <br />
+              Katariina Saarinen<br />
+               </span>
+              <hr size="4" noshade="noshade" />
+            <p><span class="Reg">Nice.<br />
+               <br />
+              Erik Brun</span></p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">Hail Mary my bum! You are talented!</span></p>
+            <p><span class="Reg">Rebecca Hauser</span></p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">wow, amazing.<br />
+            <br />
+            Kristie Cecil</span></p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">Do you have a prescription strength mask  to find that?</span></p>
+            <p class="Reg">Deb Wolf</p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">Beautiful colors, clarity and  composition. Still using just your camera flash?</span></p>
+            <p> <span class="Reg">Terri Thrasher Kring</span></p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">Awesome show! Thanks for sharing  your lovely photographs!</span></p>
+            <p><span class="Reg">Lara Pagel</span></p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">awesome album! Looks like fun.</span></p>
+            <p class="Reg">Mike Young</p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">really enjoy looking at your  pictures viv.. keep up the spirit...</span></p>
+            <p class="Reg">Indra Swari W </p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">Fantastic as always Viv. </span></p>
+            <p><span class="Reg">Daniel Kumburis</span></p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">Hey . . . those are some beautiful photographs. When does  your show open? I know you will do well. Luck!</span></p>
+            <p class="Reg"><strong>Terry Meyer</strong></p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">You are soooo good Viv!!!! Wish  I could have been spotting for you</span></p>
+            <p class="Reg">Beverly Belik</p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">Looks like a Jacques Cousteau  album! Very different critters! 
+              Did not know you were a diver--no end to your talents, Viv.</span></p>
+            <p><span class="Reg">Bernie Peterson</span> </p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg">What a gift Vivian. Don't ever  doubt that you are an amazing woman with amazing abilities. </span></p>
+            <p class="Reg">Marianne Potter <a href="http://www.facebook.com/media/set/?set=a.1020742410589.2003704.1586043774&amp;type=1&amp;comment_id=159110&amp;offset=0&amp;total_comments=4"></a></p>
+            <hr size="4" noshade="noshade" />
+            <p> <span class="Reg">Amazing as always... I hope someday to take pictures half as  good as yours!!!<br />
+                  <br />
+              Rebecca  Hauser</span></p>
+            <hr size="4" noshade="noshade" />
+            <p class="Reg"><br />
+              Viv - Are you coming down to CCV this August? I need you  to take pictures of me for &quot;Today's Senior Adventurer&quot; travel  magazine.<br />
+  <br />
+              C Chris Niederhauser</p>
+            <hr size="4" noshade="noshade" />
+            <p><span class="Reg"><br />
+              Viv, finally had a chance to look through your pictures on  Voice of the Sea. Wow, what a high bar you have set for the rest of us.  Fantastic shots! Do you mind if I add the link on my FB page?<br />
+  <br />
+              Mark Maddox</span></p>
+            <hr size="4" noshade="noshade" /></td>
+          </tr>
+          
+          <tr>
+            <td height="71" valign="top"><img src="Images/Animation/FishContactUs.gif" width="658" height="50" /><br />
+            <br /></td>
+          </tr>
+        </table>
+        <!-- InstanceEndEditable --></td>
+    </tr>
+    <tr>
+      <td width="278" class="Small">&nbsp;</td>
+      <td width="398" class="Small"><div align="left" class="style15"><a href="#Top" class="Small style14">Top</a></div>
+        <div align="left"></div></td>
+    </tr>
+  </table>
+</div>
+<div id="lyrTop">
+  <div align="right"></div>
+  <div align="right"></div>
+</div>
+<div class="Heading style1" id="lyrTitle">
+  <p align="center"><span class="style6"><span class="style7"><strong><span class="style16">Voice of the Sea</span><span class="style5"><br />
+  </span></strong><span class="style13">by <br />
+  Vivian </span></span></span> </p>
+</div>
+<div id="lyrLine"><img src="Images/TopLine.jpg" width="860" height="8" /></div>
+<div id="lyrSide">
+  <table width="120" border="0" cellspacing="0">
+    <tr>
+      <td><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Home','','Images/Buttons/Home_white.gif',1)"></a><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Home','','Images/Buttons/HomeBold.gif',1)"><img src="Images/Buttons/HomeReg.gif" name="Home" width="129" height="30" border="0" id="Home" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Browse_Images','','Images/Buttons/Browse_Images_Reg.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><img src="Images/Buttons/BrowseImagesReg.gif" name="BrowseImages" width="129" height="30" border="0" id="BrowseImages" onclick="MM_showHideLayers('lyrBrImage','','show')" onmouseover="MM_swapImage('BrowseImages','','Images/Buttons/BrowseImagesBold.gif',1)" onmouseout="MM_showHideLayers('lyrBrImage','','hide');MM_swapImgRestore()" /><a href="Browse_Images.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Browse Images','','Images/Buttons/Browse_Images_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Trip_Reports.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Trip Reports','','Images/Buttons/TripReports2Bold.gif',1)"><img src="Images/Buttons/TripReports2Reg.gif" name="Trip Reports" width="131" height="46" border="0" id="Trip Reports" /></a><a href="Trip_Reports.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Trip Reports','','Images/Buttons/TripReportsBold.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Comments.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Comments','','Images/Buttons/Comments_Bld.gif',0)"><img src="Images/Buttons/Comments_Reg.gif" name="Comments" width="128" height="31" border="0" id="Comments" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td><a href="Links.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Links','','Images/Buttons/LinksBold.gif',1)"><img src="Images/Buttons/LinksReg.gif" name="Links" width="129" height="30" border="0" id="Links" /></a><a href="Links.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Links','','Images/Buttons/Links_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Contact_Us.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('ContactUs','','Images/Buttons/ContactUsBold.gif',1)"><img src="Images/Buttons/ContactUsReg.gif" name="ContactUs" width="129" height="30" border="0" id="ContactUs" /></a><a href="Contact_Us.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Contact Us','','Images/Buttons/Contact_Us_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="lyrBrImage" onmouseover="MM_showHideLayers('lyrBrImage','','show')" onmouseout="MM_showHideLayers('lyrBrImage','','hide')"><a href="Browse_Images_Above_the_Sea.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Above the Sea','','Images/Buttons/BrowseImages/AboveTheSea_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/AboveTheSea_REG.gif" name="Above the Sea" width="182" height="19" border="0" id="Above the Sea" /></a><a href="Browse_Images_Cephalopods.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Cephalopods','','Images/Buttons/BrowseImages/Cephalopods_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Cephalopods_REG.gif" name="Cephalopods" width="182" height="19" border="0" id="Cephalopods" /></a><!--  RRS1 --><a href="Browse_Images_Crustaceans.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Crustaceans','','Images/Buttons/BrowseImages/Crustaceans_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Crustaceans_REG.gif" name="Crustaceans" width="182" height="19" border="0" id="Crustaceans" /></a<!--  RRS2 --><a href="Browse_Images_Eels_Seahorses.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Eels - Seahorses','','Images/Buttons/BrowseImages/EelsSeahorses_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/EelsSeahorses_REG.gif" name="Eels - Seahorses" width="182" height="19" border="0" id="Eels - Seahorses" /></a><a href="Browse_Images_Fish.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Fish','','Images/Buttons/BrowseImages/Fish_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Fish_REG.gif" name="Fish" width="182" height="19" border="0" id="Fish" /></a><a href="Browse_Images_Nudibranchs.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Nudibranchs','','Images/Buttons/BrowseImages/NudiBranchs_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/NudiBranchs_REG.gif" name="Nudibranchs" width="182" height="19" border="0" id="Nudibranchs" /></a><a href="Browse_Images_Scenes_Coral_Sponge.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Scenes - Coral - Sponge','','Images/Buttons/BrowseImages/ScenesCoralSponge_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/ScenesCoralSponge_REG.gif" name="Scenes - Coral - Sponge" width="182" height="19" border="0" id="Scenes - Coral - Sponge" /></a><a href="Browse_Images_Sea_Anemones.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Sea Anemones','','Images/Buttons/BrowseImages/SeaAnemones_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/SeaAnemones_REG.gif" name="Sea Anemones" width="182" height="19" border="0" id="Sea Anemones" /></a><a href="Browse_Images_Starfish_Feather_Stare.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Starfish - Feather Stars','','Images/Buttons/BrowseImages/StarfishFeatherStars_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/StarfishFeatherStars_REG.gif" name="Starfish - Feather Stars" width="182" height="19" border="0" id="Starfish - Feather Stars" /></a><a href="Browse_Images_Turtles_Sharks_Whales.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Turtles - Sharks - Whales','','Images/Buttons/BrowseImages/TurtlesSharksWhales_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/TurtlesSharksWhales_REG.gif" name="Turtles - Sharks - Whales" width="182" height="19" border="0" id="Turtles - Sharks - Whales" /></a><a href="Browse_Images_Other.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Other','','Images/Buttons/BrowseImages/Other_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Other_REG.gif" name="Other" width="182" height="19" border="0" id="Other" /></a></div>
+<div id="lyrTopOfPage"></div>
+<a name="Top" id="Top"></a>
+</body>
+<!-- InstanceEnd --></html>

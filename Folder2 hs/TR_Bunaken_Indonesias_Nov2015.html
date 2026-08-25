@@ -1,0 +1,599 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Level_One_SS.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+songNum = new Array();
+songNum[0] = "#";
+songNum[1] = "http://www.voiceofthesea.com/Sounds/BobMarley_IsThisLove.mid";
+songNum[2] = "http://www.voiceofthesea.com/Sounds/Aeroplane.mid";
+songNum[3] = "http://www.voiceofthesea.com/Sounds/Genie_In_A_Bottle.mid";
+songNum[4] = "http://www.voiceofthesea.com/Sounds/How_Blue_Can_You_Get.mid";
+songNum[5] = "http://www.voiceofthesea.com/Sounds/Last_Dance.mid";
+songNum[6] = "http://www.voiceofthesea.com/Sounds/Ramblin_Man.mid";
+songNum[7] = "http://www.voiceofthesea.com/Sounds/Reflection.mid";
+
+var music = null;
+var track = 0;
+var ver = navigator.appName;
+function audioCheck(plugName) {
+for (var i = 0; i < navigator.plugins.length; i++) {
+if (navigator.plugins[i].name.toLowerCase() == plugName.toLowerCase()) {
+for (var j = 0; j < navigator.plugins[i].length; j++) {
+if (navigator.plugins[i][j].enabledPlugin) {
+return true;
+   }
+}
+return false;
+   }
+}
+return false;
+}
+function chooseSong(s) { // ie
+track = s.options[s.selectedIndex].value; 
+if (ver == "Microsoft Internet Explorer") {
+document.all.music.src = songNum[track]; 
+} else {
+songPlay('play');
+   }
+}
+function songPlay(cmd) { // netscape
+if (audioCheck("LiveAudio")) {
+if (cmd == 'play') {
+document.musicSource.play(false, songNum[track]);
+   }
+} else {
+alert("You Do Not Have The Correct Plugin");
+   }
+}
+//  End -->
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function right(e) {
+var msg = "Oops, no right click.....";
+if (navigator.appName == 'Netscape' && e.which == 3) {
+alert(msg);
+return false;
+}
+if (navigator.appName == 'Microsoft Internet Explorer' && event.button==2) {
+alert(msg);
+return false;
+}
+else return true; 
+}
+function trap() 
+  {
+  if(document.images)
+    {
+    for(i=0;i<document.images.length;i++)
+      {
+      document.images[i].onmousedown = right;
+      document.images[i].onmouseup = right;
+      }
+    }
+  }
+// End -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var Onerotate_delay = 3000; // delay in milliseconds (5000 = 5 secs)
+Onecurrent = 0;
+var OneLinks = new Array(3);
+OneLinks[0] = "http://www.voiceofthesea.com/Browse_Images.html";
+OneLinks[1] = "http://www.voiceofthesea.com/Browse_Images.html";
+OneLinks[2] = "http://www.voiceofthesea.com/Browse_Images.html";
+function Onenext() {
+if (document.Oneslideform.Oneslide[Onecurrent+1]) {
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent+1].value;
+document.Oneslideform.Oneslide.selectedIndex = ++Onecurrent;
+   }
+else Onefirst();
+}
+function Oneprevious() {
+if (Onecurrent-1 >= 0) {
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent-1].value;
+document.Oneslideform.Oneslide.selectedIndex = --Onecurrent;
+   }
+else Onelast();
+}
+function Onefirst() {
+Onecurrent = 0;
+document.images.Oneshow.src = document.Oneslideform.Oneslide[0].value;
+document.Oneslideform.Oneslide.selectedIndex = 0;
+}
+function Onelast() {
+Onecurrent = document.Oneslideform.Oneslide.length-1;
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent].value;
+document.Oneslideform.Oneslide.selectedIndex = Onecurrent;
+}
+function Oneap(text) {
+document.Oneslideform.Oneslidebutton.value = (text == "Stop") ? "Start" : "Stop";
+Onerotate();
+}
+function Onechange() {
+Onecurrent = document.Oneslideform.Oneslide.selectedIndex;
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent].value;
+}
+function Onerotate() {
+if (document.Oneslideform.Oneslidebutton.value == "Stop") {
+Onecurrent = (Onecurrent == document.Oneslideform.Oneslide.length-1) ? 0 : Onecurrent+1;
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent].value;
+document.Oneslideform.Oneslide.selectedIndex = Onecurrent;
+window.setTimeout("Onerotate()", Onerotate_delay);
+}
+}
+function Onetransport(){
+window.location=OneLinks[Onecurrent]
+}
+//  End -->
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Bunaken, Indonesia - Two Fish Resort</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:6;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.style14 {color: #000000}
+-->
+</style>
+<style type="text/css">
+</style>
+<style type="text/css">
+</style>
+<style type="text/css">
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<style type="text/css">
+</style>
+<style type="text/css">
+</style>
+<style type="text/css">
+</style>
+<style type="text/css">
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+#lyrMainPage {
+	position:absolute;
+	width:925px;
+	height:60px;
+	z-index:1;
+	left: 172px;
+	top: 173px;
+}
+#lyrTop {
+	position:absolute;
+	width:1100px;
+	height:145px;
+	z-index:2;
+	background-image: url(.);
+	left: -5px;
+	top: 1px;
+}
+#lyrTitle {
+	position:absolute;
+	width:344px;
+	height:64px;
+	z-index:3;
+	left: 100px;
+	top: 11px;
+}
+-->
+</style>
+<link href="Style%20Sheets/KWGSS.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {
+	font-size: xx-large;
+	font-style: italic;
+}
+#lyrSide {
+	position:absolute;
+	width:122px;
+	height:156px;
+	z-index:4;
+	left: 8px;
+	top: 189px;
+}
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:5;
+}
+#lyrTopOfPage {
+	position:absolute;
+	width:15px;
+	height:15px;
+	z-index:5;
+	left: 8px;
+	top: 8px;
+}
+.style5 {font-size: large}
+.style6 {color: #035BA5}
+.style7 {color: #0000FF}
+.style13 {
+	font-size: medium;
+	color: #000000;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.style14 {color: #035ba5; }
+#lyrLine {
+	position:absolute;
+	width:860px;
+	height:8px;
+	z-index:6;
+	top: 146px;
+	left: 0px;
+}
+#lyrBrImages {
+	position:absolute;
+	width:121px;
+	height:211px;
+	z-index:7;
+	top: 271px;
+	left: 28px;
+	visibility: hidden;
+}
+.style16 {color: #035ba5; font-family: Georgia, "Times New Roman", Times, serif; }
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+<body onLoad="trap()"
+ onload="MM_preloadImages('Images/Buttons/Browse_Images_Reg.gif','Images/Buttons/Home_white.gif','Images/Buttons/Browse_Images_white.gif','Images/Buttons/Products_And_Rates_white.gif','Images/Buttons/Links_white.gif','Images/Buttons/Contact_Us_white.gif','Images/Buttons/HomeBold.gif','Images/Buttons/BrowseImagesBold.gif','Images/Buttons/ProductsAndRatesBold.gif','Images/Buttons/LinksBold.gif','Images/Buttons/ContactUsBold.gif','Images/Buttons/Fish_Bold.gif','Images/Buttons/Creatures_Bold.gif','Images/Buttons/Underwater_Scenes_Bold.gif','Images/Buttons/BrowseImagesBold.gif','Images/Buttons/Fish_Bold.gif','Images/Buttons/Creatures_Bold.gif','Images/Buttons/Coral_Sponges_Bold.gif','Images/Buttons/Underwater_Scenes_Bold.gif','Images/Buttons/Fish_Bold.gif','Images/Buttons/TripReportsBold.gif','Images/Buttons/Fish9_Bold.gif','Images/Buttons/Creatures9_Bold.gif','Images/Buttons/CoralSponges9_Bold.gif','Images/Buttons/UnderwaterImages9_Bold.gif','Images/Buttons/BrowseImages/AboveTheSea_BLD.gif','Images/Buttons/BrowseImages/Cephalopods_BLD.gif','Images/Buttons/BrowseImages/Crustaceans_BLD.gif','Images/Buttons/BrowseImages/EelsSeahorses_BLD.gif','Images/Buttons/BrowseImages/Fish_BLD.gif','Images/Buttons/BrowseImages/NudiBranchs_BLD.gif','Images/Buttons/BrowseImages/ScenesCoralSponge_BLD.gif','Images/Buttons/BrowseImages/SeaAnemones_BLD.gif','Images/Buttons/BrowseImages/StarfishFeatherStars_BLD.gif','Images/Buttons/BrowseImages/TurtlesSharksWhales_BLD.gif','Images/Buttons/BrowseImages/Other_BLD.gif''../Images/Buttons/Comments_Bld.gif')">
+<div id="lyrMainPage">
+  <table width="924" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td colspan="2"><!-- InstanceBeginEditable name="EditRegion3" -->
+ 	  <TABLE width="923" border="0" cellpadding="0" cellspacing="0">
+  <TR>
+    <TD>
+      <form name="Oneslideform" >
+        <DIV align="center">
+          <p class="Heading style18"><span class="Heading style6 style17">TWO FISH RESORT<br />
+            </span> <span class="Small"></span><span class="Heading style6 style17"><br />
+                Bunaken Island, Manado City, North Sulawesi, Indonesia   - November  2015 </span></p>
+          <TABLE width="657" height="100" border="0" cellspacing="0" cellpadding="0" bordercolor="#ffffff">
+            <TR>
+              <TD bgcolor="#ffffff" class="style18">
+                <DIV align="center" class="Heading style6"></DIV>
+                <DIV align="center" class="Reg"><B><br />
+                </DIV>                </TD>
+            </TR>
+            <TR>
+              <TD bgcolor="#ffffff" class="style18">
+                <DIV align="center"><!-- RRS4 <A href="javascript:Onetransport()"> --> <IMG src="Images/TripReports/BunakenIndonesia/01_Scorpionfish.jpg" width="625" height="468" name="Oneshow" border="0"></A></DIV>              </TD>
+            </TR>
+            <TR>
+              <TD bgcolor="#ffffff" class="style18">
+                <DIV align="center">
+                  <SELECT name="Oneslide" class="SmallBlack" onChange="Onechange();">
+				    <OPTION value="Images/TripReports/BunakenIndonesia/01_Scorpionfish.jpg"  selected>01 Scorpionfish</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/02_Tunicates.jpg">02 Tunicates</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/03_Springtails.jpg">03 Springtails</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/04_Ledge_of_Springtails.jpg">04 Ledge of Springtails</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/05_Filefish.jpg">05   Filefish</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/06_Anemone_Fish.jpg">06   Anemone Fish</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/07_Coral.jpg">07  Coral</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/08_Anemone_Underside.jpg">08 Anemone Underside</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/09_Spiral_Whip_Coral.jpg">09 Sprial Whip Coral</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/10_Burrfish.jpg">10 Burrfish</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/11_Cuttlefish.jpg">11 Cuttlefish</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/12_Cuttlefish_Color_Change.jpg">12 Cuttlefish Color Change</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/13_Green_Turtle.jpg">13 Green Turtle</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/14_Pufferfish.jpg">14 Pufferfish</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/15_Ascidian_Tunicate.jpg">15	Ascidian Tunicate</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/16_Spine_Cheek_Clownfish_3.jpg">16 Spine Cheek Clownfish</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/17_Tunicates.jpg">17	Tunicates</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/18_Anemone_Clownfish.jpg">18	Skunk Anemonefish</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/19_Fang_Blenny.jpg">19 Fangblenny</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/21_Tunicate_or_Sea_Squirt.jpg">21 Tunicate or Sea Squirt</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/22_Coral_and_Tunicates.jpg">22 Coral and Tunicates</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/23_Broccoli_Coral.jpg">23 Broccoli Coral</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/24_Snappers.jpg">24	Snappers</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/26_Golden_Sea_Squirt.jpg">26	Golden Sea Squirt</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/27_Lion_Fish.jpg">27 Lionfish</OPTION>
+					<OPTION value="Images/TripReports/BunakenIndonesia/28 Scene.jpg">28 Scene</OPTION>
+					</SELECT>
+      </DIV>              </TD>
+            </TR>
+            <TR>
+              <TD bgcolor="#ffffff" class="style18">
+                
+                <div align="center">
+                                   <INPUT type=button class="SmallBlack" title="Previous" onClick="Oneprevious();" value="Prev">
+                                   <input name="Oneslidebutton" type=button class="SmallBlack" title="AutoPlay" onclick="Oneap(this.value);" value="Auto/Stop" />
+                                   <input name="button" type=button class="SmallBlack" title="Next" onclick="Onenext();" value="Next" />
+                    <br />
+                </div></TD></TR>
+          </TABLE>
+        </DIV>
+      </form>
+    </TD>
+  </TR>
+</TABLE>
+	  <center>
+<form name=choose>
+  <table width="916">
+    <tr></tr>
+    
+    <tr>
+      <td class="Reg"><table width="929" cellpadding="5" cellspacing="3" bordercolor="#000000">
+        <tr>
+          <td><img src="Images/TripReports/BunakenIndonesia/Report_Pictures/Sulawesi-on-World-Map.jpg" alt="Map" width="468" height="296" /></td>
+          <td width="428"><p class="Reg">The island of Bunaken is situated at the northern tip of the  island of Sulawesi, Indonesia.&nbsp; It is  roughly 3 square miles in area and is part of the Bunaken National Marine Park.<br />
+                  <br />
+            Bunaken is reached from Manado by motorized boat, departing  from Manado Harbor.<br />
+            &nbsp; <br />
+            This lovely area offers about 20 dive sites characterized by  steep walls marked with deep  crevices, sea fans and giant sponges..</p></td>
+        </tr>
+        <tr>
+          <td colspan="2"><div align="center"><img src="Images/TripReports/BunakenIndonesia/Report_Pictures/indonesia-country-vector-color copy.jpg" alt="Map" width="909" height="412" /></div></td>
+        </tr>
+        <tr>
+          <td height="97" colspan="2"><p class="style17">Getting to Bunaken from the USA is not an easy process,  but it is worth the effort.&nbsp;<br />
+            &nbsp;&nbsp; <br />
+            We spent two weeks muck diving in Lembeh and then headed to <strong><em>Two  Fish Dive Resort</em></strong> in Bunaken for a four-day stay.&nbsp;&nbsp; A motorized boat cannot access the shallow  shoreline waters surrounding Two Fish Resort, so the transport and dive boats  are moored in deeper water and passengers are transferred to a small boat,  propelled by staff members using long poles.&nbsp;&nbsp; </p></td>
+        </tr>
+        <tr>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="470"><img src="Images/TripReports/BunakenIndonesia/Report_Pictures/01_Manado_to_Bunaken.jpg" alt="Bunaken by Boat" width="425" height="252" /></td>
+          <td><div align="right"><img src="Images/TripReports/BunakenIndonesia/Report_Pictures/02_Shore_Transport.jpg" alt="Pole Pushing" width="425" height="252" /></div></td>
+        </tr>
+        <tr>
+          <td colspan="2"><table width="908" height="34" border=" 0" cellpadding=" 0" cellspacing=" 0">
+            <tr>
+              <td width="451"><div align="center"><span class="RegM1">From Manado to Bunken by Boat </span></div></td>
+              <td width="447"><div align="center"><span class="RegM1">Shore Transport Out </span></div></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="RegM1"><table width="890" height="31" border="0" cellpadding=" 0" cellspacing=" 0">
+            <tr>
+              <td width="527"><img src="Images/TripReports/BunakenIndonesia/Report_Pictures/04.jpg" alt="Water Fall" width="515" height="356" hspace="7" vspace="7" />
+<table width="515" border="0" cellspacing=" 0" cellpadding=" 0">
+                  <tr>
+                      <td width="511"><img src="Images/TripReports/BunakenIndonesia/Report_Pictures/06.jpg" alt="Shade Area" width="515" height="386" hspace="6" vspace="6" /></td>
+                  </tr>
+                  <tr>
+                      <td><p class="Reg"><strong>The single drawback  was a significant one for us.&nbsp; The  Cabanas did not have air conditioning.&nbsp;  We were aware of this before booking the trip, but thought we could  manage hot conditions for the 4-day stay.&nbsp;  We were wrong!</strong></p></td>
+                  </tr>
+                              </table></td>
+              <td width="357"><table width="357" border="0" cellspacing="5" cellpadding="5">
+                <tr>
+                  <td width="353"><p class="Reg"><strong>Two Fish Resort is a  gorgeous spot with well-groomed gardens, peaceful resting spots, and a large  pool warmed by the sunshine.&nbsp; The cabanas  were spacious and offered ample storage and camera set-up space.&nbsp; Diving and non-diving guests would find the  setting to encourage a sense of peace and sheer relaxation.</strong><br />
+                    <br />
+                  </p></td>
+                </tr>
+                <tr>
+                  <td><img src="Images/TripReports/BunakenIndonesia/Report_Pictures/05_Places_To_Relax.jpg" alt="Place to Relax" width="342" height="312" hspace="7" vspace="7" /></td>
+                </tr>
+                <tr>
+                  <td><img src="Images/TripReports/BunakenIndonesia/Report_Pictures/07_Pool_Rules.jpg" alt="Pool Rules" width="342" height="302" hspace="7" vspace="7" /></td>
+                </tr>
+              </table></td>
+            </tr>
+          </table></td>
+          </tr>
+        
+      </table>
+      </td>
+    </tr>
+       
+    <tr>
+      <td class="Reg"><table width="923">
+      
+             
+        
+        
+        <tr>
+          <td width="915" colspan="2">
+		  
+		 
+		  
+		   <table width="910" border="0" cellspacing=" 0" cellpadding=" 0">
+             <tr>
+               <td width="906"><strong>The large,  standing fans were no match for the heat and humidity, making it difficult to  get restful sleep.<br />
+&nbsp;&nbsp; </strong><br />
+                     <strong>We enjoyed  the dining at Two Fish Resorts.&nbsp; Seating  at long tables with others allowed us to get to know our fellow divers.&nbsp; The food was prepared well - tasty and hot,  and we never left hungry.&nbsp; Fruit was  always available to take for a boat snack.</strong></p></td>
+             </tr>
+             <tr>
+               <td>&nbsp;</td>
+             </tr>
+             <tr></tr>
+             <tr>
+               <td class="Regp1"><strong>The Dive Operation</strong></br>
+                 <br /></td>
+             </tr>
+             <tr>
+               <td><table width="909" height="421" border="1" cellpadding=" 0" cellspacing=" 0">
+                 <tr>
+                   <td width="535" height="419"><img src="Images/TripReports/BunakenIndonesia/Report_Pictures/Dive_Operation.jpg" alt="Dive Operation" width="525" height="394" hspace="10" vspace="5" /></td>
+                   <td width="368"><table width="365" height="31" border="0" cellpadding=" 0" cellspacing=" 0">
+                     <tr></tr>
+                   </table>
+                     <table width="367" height="22" border="0" cellpadding="7" cellspacing="5">
+                       <tr>
+                         <td width="343"><p class="Reg"><strong>The dive gear-up/clean-up area was adequate, providing benches, separate  rinse tanks for equipment, wetsuits, and cameras.&nbsp; It was a large enough area that folks could  move about without bumping into one another.&nbsp;  Drying racks were located in the sunshine and breeze,&nbsp; so&nbsp;  gear dried between dives.&nbsp; An  abundance of dive resource books were available for creature identification</strong>.</p></td>
+                       </tr>
+                     </table></td>
+                 </tr>
+               </table></td>
+             </tr>
+             <tr></tr>
+             <tr>
+               <td height="224"><p class="Reg"><strong>Walking gear from the shallow waters to the punk boat and loading, first  that boat, then 'pole-pushing' to the dive boat and re-loading was cumbersome  in wetsuits and heat.&nbsp;&nbsp; Dive sites were  relatively nearby, and offered beautiful walls with healthy corals.&nbsp; This was a delightful change from the  previous two weeks of muck diving.&nbsp; Don't  get me wrong:&nbsp; we love the muck diving of  Lembeh.&nbsp; But switching to diving coral  walls was lovely.<br />
+                 </strong><br />
+                       <strong>The biggest  drawback to the dive operation, in my opinion, was the level of experience or training  of the dive guides.&nbsp; They were all&nbsp; very friendly, but the guides that we had  seemed to&nbsp; view&nbsp; their job as just providing accompaniment on  the dive.&nbsp; They dove <em>with</em> us, but did not seek out critters or identify critters, or  offer other assistance to make the dives exceptional.&nbsp; Similarly, they didn't always wait for divers  to board the boat after a dive, in order to help them with fin/weight removal,  etc.&nbsp;&nbsp; Perhaps we are spoiled, but we  found this lack of technical and physical assistance to be atypical in our  diving experience.<br />
+                       </strong><br />
+                         <strong>So, the  drawbacks were few, but to us they were significant.&nbsp; We likely would try a different resort or two  in Bunaken before returning to Two Fish.</strong></p>
+                 </td>
+             </tr>
+           </table>
+		   <p class="Reg"><img src="Images/Vivisn_Signature.jpg" width="82" height="18" border="0" /></a><br />
+		     November 2015 </p>
+		   <p class="Reg">Trip Report Quick Links &nbsp;&nbsp;&nbsp;
+              <select name="Trip Reports" onchange="MM_jumpMenu('parent',this,0)">
+<option value="">--Please Choose Your Destination--</option>
+                <option value="TR_Ambon_Indonesia_Nov2009.html">Ambon, Indonesia - Maluka Dive Resort - Nov '09</option>
+				<option value="TR_Aniloa_Philippines_Apr2013.html">Aniloa, Philippines - Crystal Blue - Apr '13</option>
+                <option value="TR_Bali_Apr2011.html">Bali, Indonesia - Liberty Dive Resort - Apr '11</option>
+                <option value="TR_Bali_Indonesia_Liberty_Dive_Resort3.html">Bali, Indonesia - Liberty Dive Resort - Nov '14</option>
+                <option value="TR_Bonaire_Captain_Dons_Habitat_Nov2019.html">Bonaire, Netherland Antilles- Captain Don's Habitat - Nov '19</option>
+				<option value="TR_Bonaire.html">Bonaire, Netherland Antilles - Bonaire Town Homes - May '16</option>
+				<option value="TR_Bunaken_Indonesias_Nov2015.html">Bunaken, Indonesia - Two Fish Resort - Nov '15</option>
+				<option value="TR_Indonesia_Nov_2016.html">Indonesia - Liberty Dive Resort and NAD Resort - Nov '16</option>
+				<option value="TR_Lembeh_Indonesia_March2012.html">Lembeh, Indonesia - NAD Lembeh Resort - Mar '12</option>
+				<option value="TR_Raja_Ampat_Dec2009.html">Raja Ampat, Indonesia - Archipelago II Live-Aboard - Dec '09</option>
+				<option value="TR_Roaton_Feb2010.html">Roatan Bay Islands, Honduras -Destination Report - Feb '10</option>
+                <option value="TR_CoCo_View_Aug2011.html">Roatan, Honduras - CoCo View Resort: A Photo Report - Aug '11</option>
+                <option value="TR_CoCo_View_Feb2012.html">Roatan, Honduras - CoCo View Resort: Photo Review - Feb '12</option>
+                <option value="TR_The_Coral_Spawn_Aug2010.html">Roaton Honduras - The Coral Spawn - Aug '10</option>
+                <option value="TR_Riverfront_Arts_Exhibit.html">Riverfront Arts Center - Treasures of the Deep - Apr '10</option>
+                <option value="Trip_Reports.html">Trip and Destination Reports</option>
+              </select>
+				    </p>					  </td>
+          </tr>
+      </table></td>
+    </tr>
+  </table>
+  <div align="left"></div>
+  </form>
+
+<div align="left">
+
+    <script language="JavaScript">
+<!-- Begin
+var ver = navigator.appName;
+if (ver == "Microsoft Internet Explorer") {
+document.write('<bgsound src="#" ID=music loop=9 AUTOSTART=true>');
+} else {
+document.write('<embed type="audio/midi" src="aeroplane.mid" AUTOSTART=false hidden=true VOLUME="90" name="musicSource" MASTERSOUND></EMBED>');
+}
+// End -->
+  </script>
+    <p class="Reg"><br />
+      </p>
+    </div>
+</center>
+      <!-- InstanceEndEditable --></td>
+    </tr>
+    <tr>
+      <td width="450" class="Small">&nbsp;</td>
+      <td width="474" class="Small"><div align="left"><a href="#Top" class="style14">Top</a></div>
+      <div align="left"></div></td>
+    </tr>
+  </table>
+</div>
+<div id="lyrTop">
+  <div align="left"><img src="Images/Coral_Top_01.jpg" width="1100" height="153" /></div>
+  <div align="right"></div>
+</div>
+<div class="Heading style1" id="lyrTitle">
+  <p align="center"><span class="style6"><span class="style7"><strong>    <span class="style16">Voice of the Sea</span><span class="style5"><br />
+  </span></strong><span class="style13">by <br />
+  Vivian </span></span></span> </p>
+</div>
+<div id="lyrSide">
+  <table width="120" border="0" cellspacing="0">
+    <tr>
+      <td><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Home','','Images/Buttons/Home_white.gif',1)"></a><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Home','','Images/Buttons/HomeBold.gif',1)"><img src="Images/Buttons/HomeReg.gif" name="Home" width="129" height="30" border="0" id="Home" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Browse_Images','','Images/Buttons/Browse_Images_Reg.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><img src="Images/Buttons/BrowseImagesReg.gif" name="BrowseImages" width="129" height="30" border="0" id="BrowseImages" onclick="MM_showHideLayers('lyrMainPage','','inherit','lyrBrImages','','show')" onmouseover="MM_swapImage('BrowseImages','','Images/Buttons/BrowseImagesBold.gif',1)" onmouseout="MM_showHideLayers('lyrBrImages','','hide');MM_swapImgRestore()" /><a href="Browse_Images.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Browse Images','','Images/Buttons/Browse_Images_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Trip_Reports.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Trip Reports','','Images/Buttons/TripReportsBold.gif',1)"><img src="Images/Buttons/TripReportsReg.gif" name="Trip Reports" width="129" height="30" border="0" id="Trip Reports" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Comments.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Comments','','Images/Buttons/Comments_Bld.gif',1)"><img src="Images/Buttons/Comments_Reg.gif" name="Comments" width="128" height="31" border="0" id="Comments" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td><a href="Links.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Links','','Images/Buttons/LinksBold.gif',1)"><img src="Images/Buttons/LinksReg.gif" name="Links" width="129" height="30" border="0" id="Links" /></a><a href="Links.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Links','','Images/Buttons/Links_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Contact_Us.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('ContactUs','','Images/Buttons/ContactUsBold.gif',1)"><img src="Images/Buttons/ContactUsReg.gif" name="ContactUs" width="129" height="30" border="0" id="ContactUs" /></a><a href="Contact_Us.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Contact Us','','Images/Buttons/Contact_Us_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="lyrBrImages" onmouseover="MM_showHideLayers('lyrBrImages','','show')" onmouseout="MM_showHideLayers('lyrBrImages','','hide')"><a href="Browse_Images_Above_the_Sea.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Above the Sea','','Images/Buttons/BrowseImages/AboveTheSea_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/AboveTheSea_REG.gif" name="Above the Sea" width="182" height="19" border="0" id="Above the Sea" /></a><a href="Browse_Images_Cephalopods.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Cephalopods','','Images/Buttons/BrowseImages/Cephalopods_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Cephalopods_REG.gif" name="Cephalopods" width="182" height="19" border="0" id="Cephalopods" /></a> <a href="Browse_Images_Crustaceans.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Crustaceans','','Images/Buttons/BrowseImages/Crustaceans_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Crustaceans_REG.gif" name="Crustaceans" width="182" height="19" border="0" id="Crustaceans" /></a> <a href="Browse_Images_Eels_Seahorses.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Eels - Seahorses','','Images/Buttons/BrowseImages/EelsSeahorses_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/EelsSeahorses_REG.gif" name="Eels - Seahorses" width="182" height="19" border="0" id="Eels - Seahorses" /></a><a href="Browse_Images_Fish.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Fish','','Images/Buttons/BrowseImages/Fish_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Fish_REG.gif" name="Fish" width="182" height="19" border="0" id="Fish" /></a><a href="Browse_Images_Nudibranchs.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Nudibranchs','','Images/Buttons/BrowseImages/NudiBranchs_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/NudiBranchs_REG.gif" name="Nudibranchs" width="182" height="19" border="0" id="Nudibranchs" /></a><a href="Browse_Images_Scenes_Coral_Sponge.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Scenes - Coral - Sponge','','Images/Buttons/BrowseImages/ScenesCoralSponge_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/ScenesCoralSponge_REG.gif" name="Scenes - Coral - Sponge" width="182" height="19" border="0" id="Scenes - Coral - Sponge" /></a><a href="Browse_Images_Sea_Anemones.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Sea Anemones','','Images/Buttons/BrowseImages/SeaAnemones_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/SeaAnemones_REG.gif" name="Sea Anemones" width="182" height="19" border="0" id="Sea Anemones" /></a><a href="Browse_Images_Starfish_Feather_Stare.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Starfish - Feather Stars','','Images/Buttons/BrowseImages/StarfishFeatherStars_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/StarfishFeatherStars_REG.gif" name="Starfish - Feather Stars" width="182" height="19" border="0" id="Starfish - Feather Stars" /></a><a href="Browse_Images_Turtles_Sharks_Whales.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Turtles - Sharks - Whales','','Images/Buttons/BrowseImages/TurtlesSharksWhales_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/TurtlesSharksWhales_REG.gif" name="Turtles - Sharks - Whales" width="182" height="19" border="0" id="Turtles - Sharks - Whales" /></a><a href="Browse_Images_Other.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Other','','Images/Buttons/BrowseImages/Other_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Other_REG.gif" name="Other" width="182" height="19" border="0" id="Other" /></a></div>
+<div id="lyrTopOfPage"></div>
+<a name="Top" id="Top"></a>
+</body>
+<!-- InstanceEnd --></html>

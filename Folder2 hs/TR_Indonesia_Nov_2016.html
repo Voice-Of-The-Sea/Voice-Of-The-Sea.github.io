@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Level_One_SS.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+songNum = new Array();
+songNum[0] = "#";
+songNum[1] = "http://www.voiceofthesea.com/Sounds/BobMarley_IsThisLove.mid";
+songNum[2] = "http://www.voiceofthesea.com/Sounds/Aeroplane.mid";
+songNum[3] = "http://www.voiceofthesea.com/Sounds/Genie_In_A_Bottle.mid";
+songNum[4] = "http://www.voiceofthesea.com/Sounds/How_Blue_Can_You_Get.mid";
+songNum[5] = "http://www.voiceofthesea.com/Sounds/Last_Dance.mid";
+songNum[6] = "http://www.voiceofthesea.com/Sounds/Ramblin_Man.mid";
+songNum[7] = "http://www.voiceofthesea.com/Sounds/Reflection.mid";
+
+var music = null;
+var track = 0;
+var ver = navigator.appName;
+function audioCheck(plugName) {
+for (var i = 0; i < navigator.plugins.length; i++) {
+if (navigator.plugins[i].name.toLowerCase() == plugName.toLowerCase()) {
+for (var j = 0; j < navigator.plugins[i].length; j++) {
+if (navigator.plugins[i][j].enabledPlugin) {
+return true;
+   }
+}
+return false;
+   }
+}
+return false;
+}
+function chooseSong(s) { // ie
+track = s.options[s.selectedIndex].value; 
+if (ver == "Microsoft Internet Explorer") {
+document.all.music.src = songNum[track]; 
+} else {
+songPlay('play');
+   }
+}
+function songPlay(cmd) { // netscape
+if (audioCheck("LiveAudio")) {
+if (cmd == 'play') {
+document.musicSource.play(false, songNum[track]);
+   }
+} else {
+alert("You Do Not Have The Correct Plugin");
+   }
+}
+//  End -->
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function right(e) {
+var msg = "Oops, no right click.....";
+if (navigator.appName == 'Netscape' && e.which == 3) {
+alert(msg);
+return false;
+}
+if (navigator.appName == 'Microsoft Internet Explorer' && event.button==2) {
+alert(msg);
+return false;
+}
+else return true; 
+}
+function trap() 
+  {
+  if(document.images)
+    {
+    for(i=0;i<document.images.length;i++)
+      {
+      document.images[i].onmousedown = right;
+      document.images[i].onmouseup = right;
+      }
+    }
+  }
+// End -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var Onerotate_delay = 3000; // delay in milliseconds (5000 = 5 secs)
+Onecurrent = 0;
+var OneLinks = new Array(3);
+OneLinks[0] = "http://www.voiceofthesea.com/Browse_Images.html";
+OneLinks[1] = "http://www.voiceofthesea.com/Browse_Images.html";
+OneLinks[2] = "http://www.voiceofthesea.com/Browse_Images.html";
+function Onenext() {
+if (document.Oneslideform.Oneslide[Onecurrent+1]) {
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent+1].value;
+document.Oneslideform.Oneslide.selectedIndex = ++Onecurrent;
+   }
+else Onefirst();
+}
+function Oneprevious() {
+if (Onecurrent-1 >= 0) {
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent-1].value;
+document.Oneslideform.Oneslide.selectedIndex = --Onecurrent;
+   }
+else Onelast();
+}
+function Onefirst() {
+Onecurrent = 0;
+document.images.Oneshow.src = document.Oneslideform.Oneslide[0].value;
+document.Oneslideform.Oneslide.selectedIndex = 0;
+}
+function Onelast() {
+Onecurrent = document.Oneslideform.Oneslide.length-1;
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent].value;
+document.Oneslideform.Oneslide.selectedIndex = Onecurrent;
+}
+function Oneap(text) {
+document.Oneslideform.Oneslidebutton.value = (text == "Stop") ? "Start" : "Stop";
+Onerotate();
+}
+function Onechange() {
+Onecurrent = document.Oneslideform.Oneslide.selectedIndex;
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent].value;
+}
+function Onerotate() {
+if (document.Oneslideform.Oneslidebutton.value == "Stop") {
+Onecurrent = (Onecurrent == document.Oneslideform.Oneslide.length-1) ? 0 : Onecurrent+1;
+document.images.Oneshow.src = document.Oneslideform.Oneslide[Onecurrent].value;
+document.Oneslideform.Oneslide.selectedIndex = Onecurrent;
+window.setTimeout("Onerotate()", Onerotate_delay);
+}
+}
+function Onetransport(){
+window.location=OneLinks[Onecurrent]
+}
+//  End -->
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Liberty Dive Resort and NAD Resort</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:6;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.style14 {color: #000000}
+-->
+</style>
+<style type="text/css">
+</style>
+<style type="text/css">
+</style>
+<style type="text/css">
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<style type="text/css">
+</style>
+<style type="text/css">
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+#lyrMainPage {
+	position:absolute;
+	width:925px;
+	height:60px;
+	z-index:1;
+	left: 172px;
+	top: 173px;
+}
+#lyrTop {
+	position:absolute;
+	width:1100px;
+	height:145px;
+	z-index:2;
+	background-image: url(.);
+	left: -5px;
+	top: 1px;
+}
+#lyrTitle {
+	position:absolute;
+	width:344px;
+	height:64px;
+	z-index:3;
+	left: 100px;
+	top: 11px;
+}
+-->
+</style>
+<link href="Style%20Sheets/KWGSS.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {
+	font-size: xx-large;
+	font-style: italic;
+}
+#lyrSide {
+	position:absolute;
+	width:122px;
+	height:156px;
+	z-index:4;
+	left: 8px;
+	top: 189px;
+}
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:5;
+}
+#lyrTopOfPage {
+	position:absolute;
+	width:15px;
+	height:15px;
+	z-index:5;
+	left: 8px;
+	top: 8px;
+}
+.style5 {font-size: large}
+.style6 {color: #035BA5}
+.style7 {color: #0000FF}
+.style13 {
+	font-size: medium;
+	color: #000000;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.style14 {color: #035ba5; }
+#lyrLine {
+	position:absolute;
+	width:860px;
+	height:8px;
+	z-index:6;
+	top: 146px;
+	left: 0px;
+}
+#lyrBrImages {
+	position:absolute;
+	width:121px;
+	height:211px;
+	z-index:7;
+	top: 271px;
+	left: 28px;
+	visibility: hidden;
+}
+.style16 {color: #035ba5; font-family: Georgia, "Times New Roman", Times, serif; }
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+<body onLoad="trap()"
+ onload="MM_preloadImages('Images/Buttons/Browse_Images_Reg.gif','Images/Buttons/Home_white.gif','Images/Buttons/Browse_Images_white.gif','Images/Buttons/Products_And_Rates_white.gif','Images/Buttons/Links_white.gif','Images/Buttons/Contact_Us_white.gif','Images/Buttons/HomeBold.gif','Images/Buttons/BrowseImagesBold.gif','Images/Buttons/ProductsAndRatesBold.gif','Images/Buttons/LinksBold.gif','Images/Buttons/ContactUsBold.gif','Images/Buttons/Fish_Bold.gif','Images/Buttons/Creatures_Bold.gif','Images/Buttons/Underwater_Scenes_Bold.gif','Images/Buttons/BrowseImagesBold.gif','Images/Buttons/Fish_Bold.gif','Images/Buttons/Creatures_Bold.gif','Images/Buttons/Coral_Sponges_Bold.gif','Images/Buttons/Underwater_Scenes_Bold.gif','Images/Buttons/Fish_Bold.gif','Images/Buttons/TripReportsBold.gif','Images/Buttons/Fish9_Bold.gif','Images/Buttons/Creatures9_Bold.gif','Images/Buttons/CoralSponges9_Bold.gif','Images/Buttons/UnderwaterImages9_Bold.gif','Images/Buttons/BrowseImages/AboveTheSea_BLD.gif','Images/Buttons/BrowseImages/Cephalopods_BLD.gif','Images/Buttons/BrowseImages/Crustaceans_BLD.gif','Images/Buttons/BrowseImages/EelsSeahorses_BLD.gif','Images/Buttons/BrowseImages/Fish_BLD.gif','Images/Buttons/BrowseImages/NudiBranchs_BLD.gif','Images/Buttons/BrowseImages/ScenesCoralSponge_BLD.gif','Images/Buttons/BrowseImages/SeaAnemones_BLD.gif','Images/Buttons/BrowseImages/StarfishFeatherStars_BLD.gif','Images/Buttons/BrowseImages/TurtlesSharksWhales_BLD.gif','Images/Buttons/BrowseImages/Other_BLD.gif''../Images/Buttons/Comments_Bld.gif')">
+<div id="lyrMainPage">
+  <table width="924" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td colspan="2"><!-- InstanceBeginEditable name="EditRegion3" -->
+ 	  <TABLE width="923" border="0" cellpadding="0" cellspacing="0">
+  <TR>
+    <TD>
+      <form name="Oneslideform" >
+        <DIV align="center">
+          <p class="Heading style6">Indonesia: Liberty Dive Resort and NAD Resort: Photo Review  - November 2016</p>
+          <TABLE width="657" height="100" border="0" cellspacing="0" cellpadding="0" bordercolor="#ffffff">
+            <TR>
+              <TD bgcolor="#ffffff" class="style18">
+                <DIV align="center" class="Heading style6"></DIV>
+                <DIV align="center" class="Reg"><B><br />
+                </DIV>                </TD>
+            </TR>
+            <TR>
+              <TD bgcolor="#ffffff" class="style18">
+                <DIV align="center"><!-- RRS4 <A href="javascript:Onetransport()"> --> <IMG src="Images/TripReports/IndonesiaNov2016/Photo-Review.jpg" width="625" height="468" name="Oneshow" border="0"></A></DIV>              </TD>
+            </TR>
+            <TR>
+              <TD bgcolor="#ffffff" class="style18">
+                <DIV align="center">
+                  <SELECT name="Oneslide" class="SmallBlack" onChange="Onechange();">
+				    <OPTION value="Images/TripReports/IndonesiaNov2016/Photo-Review.jpg"  selected>Photo Review</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Porcelain_Crab_Feeding.jpg">Porcelain Crab Feeding</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Ribbon_Eel.jpg">Ribbon Eel</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Dog_Faced_Puffer.jpg">Dog Faced Puffer</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Tunicates.jpg">Tunicates</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Cleaner_Shrimp.jpg">Cleaner Shrimp</OPTION>	
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Watchful_Mother.jpg">Watchful Mother</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Clownfish_Eggs.jpg">Clownfish Eggs</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Clownfish_Embryos.jpg">Clownfish Embryos</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Cephalopod_With_Spiral_Eggs.jpg">Cephalopod With Spiral Eggs</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Pregnant_Puffer.jpg">Pregnant Puffer</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Lisa_Mantis_Shrimp.jpg">Lisa Mantis Shrimpp</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Baramundi.jpg">Baramundi</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Doughnut_Nudibranch.jpg">Doughnut Nudibranch</OPTION>	
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Anemone_Crab.jpg">Anemone Crab</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Juvenile_Trunkfish.jpg">Juvenile Trunkfish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Trunkfish_Almost_Lunch.jpg">Trunkfish Almost Lunch</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Watchful_Scorpionffish.jpg">Watchful Scorpionfish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Carry_Crab_With_Fire_Urchin.jpg">Carry Crab With Fire Urchin</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Hawksbill_Turtle.jpg">Hawksbill Turtleh</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Busy_Cleaning_Station.jpg">Busy Cleaning Station</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Blue_Eyed_Boxfish.jpg">Blue Eyed Boxfish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Cuttlefish.jpg">Cuttlefish</OPTION>	
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Elusive_Rhinopia.jpg">Elusive Rhinopia</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Devil_Scorpionfish.jpg">Devil Scorpionfish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Flambouyant_Cuttlefish_Agitated.jpg">Flambouyant Cuttlefish Agitated</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Flambouyant_Cuttlefish_At_Rest.jpg">Flambouyant Cuttlefish At Rest</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Bobtail_Squid_Nabs_Shrimp.jpg">Bobtail Squid Nabs Shrimp</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Mating_Crabs.jpg">Mating Crabs</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/32a_Stargazer_Rising_from_Sand.jpg">Stargazer Rising from Sand</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/33_Stargazer_Luring_Prey.jpg">Stargazer Luring Prey</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Ornate_Ghost_Pipefish.jpg">Ornate Ghost Pipefish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Ornate_Ghost_Pipefish_2.jpg">Ornate Ghost Pipefish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Emperor_Shrimp.jpg">Emperor Shrimp</OPTION>	
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Wonderpus_Octopus.jpg">Wonderpus Octopus</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Network_Pipefish.jpg">Network Pipefish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Transparent_Shrimp.jpg">Transparent Shrimp</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Weedy_Filefish.jpg">Weedy Filefish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Shrimp_Cleaning_Eel.jpg">Shrimp Cleaning Eel</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Tiny_Squat_Lobster.jpg">Tiny Squat Lobster</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Squat_Lobster.jpg">Squat Lobster</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/Blue_Ring_Octopus.jpg">Blue Ring Octopus</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/41-Cuttlefish_Eggs_In_Cocon.jpg">Cuttlefish Eggs In Coconut</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/42-Cuttlefish_Eggs_With_Embryo.jpg">CuttlefishEggs With Embryo</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/43-Crocodile_Flathead.jpg">Crocodile Flathead</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/44--Juvenile_Clownfish.jpg">Juvenile Clownfish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/45 Solar Power Nudibranch.jpg">Solar Power Nudibranch</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/46-Flabellina_Nudibranch.jpg">Flabellina Nudibranch</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/47-Pregnant-Lembeh-Dragon.jpg">Pregnant Lembeh Dragon</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/48-Leaf_Scorpionfish_Pair.jpg">Leaf Scorpionfish Pair</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/49-Egg-Laying_Goby.jpg">Egg Laying Goby</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/50-Eye_Of_The_Snail.jpg">Eye Of The Snail</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/51-Coconut_Octopus.jpg">Coconut Octopus</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/52-Gathering_Shells.jpg">Gathering Shells</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/53-Creating a Refuge.jpg">Creating a Refuge</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/54-Octopus Intelligence.jpg">Octopus Intelligence</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/56-Crab_In_Brocolli_Coral.jpg">Crab In Brocolli Coral</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/57-Frogfish.jpg">Hairy Frogfish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/58-Jawfish.jpg">Jawfish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/59-Hermit_Crab.jpg">Hermit Crab</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/60-Longbeak_Shrimp.jpg">Longbeak Shrimp</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/61-Squat_Lobster.jpg">Squat Lobster</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/62-Lemon-Goby.jpg">Lemon Goby</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/63-Spadefish-and-Friend.jpg">Spadefish and Friend</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/64-Robust_Ghost_Pipefish.jpg">Robust Ghost Pipefish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/65-Goatfish_Feeding.jpg">Goatfish Feeding</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/66-Euselenops-lunicepsSlug.jpg">Euselenops lunicepsSlug</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/67--Ribbon_Eel.jpg">Ribbon Eel</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/68-Mototi_Octopus.jpg">Mototi Octopus</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/68-Striped_Catfish.jpg">Striped Catfish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/69-Showing_Off_Her_Brood.jpg">Showing Off Her Brood</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/71-Nudibranch_Laying_Eggs.jpg">Nudibranch Laying Eggs</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/72-Snowflake_Moray_Hiding.jpg">Snowflake Moray Hiding</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/73-Frogfish.jpg">Frogfish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/74-Octopus-with-Eggs-A.jpg">Octopus with Eggs</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/75a-Sea-Hare.jpg">Sea Hare</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/75b-Rhinopia.jpg">Rhinopia</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/75-Nudibranch.jpg">Ceratosoma Nudibranch</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/77-Nudibranch_Beauty.jpg">Chromodoris Nudibranch</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/78-Juvenile-Puffer.jpg">Juvenile Puffer</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/79-Mimic_Octopus.jpg">Mimic Octopus</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/82-Sea-Snake.jpg">Sea Snake</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/83-Flabellina-Nudi.jpg">Flabellina Nudi</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/84-Squat_Anemone_Shrimp-(2).jpg">Squat Anemone Shrimp</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/85-Devil_Scorpionfish.jpg">Devil Scorpionfish</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/86-Orangutan_Crab.jpg">Orangutan Crab</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/87-Liberty-Dive-Resort.jpg">Liberty Dive Resort</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/88-Liberty_Luxury_Rooms.jpg">Liberty Luxury Rooms</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/89-Poolside-Massage.jpg">Poolside Massage</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/90-Dive_Buddies.jpg">Dive_Buddies</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/91-Posing_Is_Universal.jpg">Posing Is Universal</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/92-Tanks_Delivered.jpg">Tanks_Delivered</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/93=Surface_Interval_Snacks.jpg">Surface Interval Snacks</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/94-NAD-Resort-Lembeh.jpg">NAD Resort Lembeh</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/95-Bungalow.jpg">Bungalow</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/96-Bungalow-Room.jpg">Bungalow Room</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/97-Ocean_View.jpg">Ocean View</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/98-pacious_Boats.jpg">Spacious Boats</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/99-Divers_And_Crew.jpg">Divers And Crew</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/101-Short_Cloud_Bursts.jpg">Short Cloud Bursts</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/102-Colorful-Scenes.jpg">Colorful Scenes</OPTION>
+					<OPTION value="Images/TripReports/IndonesiaNov2016/103-Friendly-Folks.jpg">Friendly Folks</OPTION>
+					</SELECT>
+      </DIV>              </TD>
+            </TR>
+            <TR>
+              <TD bgcolor="#ffffff" class="style18">
+                
+                <div align="center">
+                                   <INPUT type=button class="SmallBlack" title="Previous" onClick="Oneprevious();" value="Prev">
+                                   <input name="Oneslidebutton" type=button class="SmallBlack" title="AutoPlay" onclick="Oneap(this.value);" value="Auto/Stop" />
+                                   <input name="button" type=button class="SmallBlack" title="Next" onclick="Onenext();" value="Next" />
+                    <br />
+                </div></TD></TR>
+          </TABLE>
+        </DIV>
+      </form>
+    </TD>
+  </TR>
+</TABLE>
+	  <center>
+<form name=choose>
+  <table width="916">
+    <tr></tr>
+    
+
+    <tr>
+      <td><table width="916">
+      
+             
+        
+        
+        <tr>
+          <td colspan="2">
+		  
+		 
+		  
+		   <p class="Reg"><img src="Images/Vivisn_Signature.jpg" width="82" height="18" border="0" /></a><br />
+        November 2016 </p>
+		  <p class="Reg">Trip Report Quick Links &nbsp;&nbsp;&nbsp;
+              <select name="Trip Reports" onchange="MM_jumpMenu('parent',this,0)">
+<option value="">--Please Choose Your Destination--</option>
+                <option value="TR_Ambon_Indonesia_Nov2009.html">Ambon, Indonesia - Maluka Dive Resort - Nov '09</option>
+				<option value="TR_Aniloa_Philippines_Apr2013.html">Aniloa, Philippines - Crystal Blue - Apr '13</option>
+                <option value="TR_Bali_Apr2011.html">Bali, Indonesia - Liberty Dive Resort - Apr '11</option>
+                <option value="TR_Bali_Indonesia_Liberty_Dive_Resort3.html">Bali, Indonesia - Liberty Dive Resort - Nov '14</option>
+                <option value="TR_Bonaire_Captain_Dons_Habitat_Nov2019.html">Bonaire, Netherland Antilles- Captain Don's Habitat - Nov '19</option>
+				<option value="TR_Bonaire.html">Bonaire, Netherland Antilles - Bonaire Town Homes - May '16</option>
+				<option value="TR_Bunaken_Indonesias_Nov2015.html">Bunaken, Indonesia - Two Fish Resort - Nov '15</option>
+				<option value="TR_Indonesia_Nov_2016.html">Indonesia - Liberty Dive Resort and NAD Resort - Nov '16</option>
+				<option value="TR_Lembeh_Indonesia_March2012.html">Lembeh, Indonesia - NAD Lembeh Resort - Mar '12</option>
+				<option value="TR_Raja_Ampat_Dec2009.html">Raja Ampat, Indonesia - Archipelago II Live-Aboard - Dec '09</option>
+				<option value="TR_Roaton_Feb2010.html">Roatan Bay Islands, Honduras -Destination Report - Feb '10</option>
+                <option value="TR_CoCo_View_Aug2011.html">Roatan, Honduras - CoCo View Resort: A Photo Report - Aug '11</option>
+                <option value="TR_CoCo_View_Feb2012.html">Roatan, Honduras - CoCo View Resort: Photo Review - Feb '12</option>
+                <option value="TR_The_Coral_Spawn_Aug2010.html">Roaton Honduras - The Coral Spawn - Aug '10</option>
+                <option value="TR_Riverfront_Arts_Exhibit.html">Riverfront Arts Center - Treasures of the Deep - Apr '10</option>
+                <option value="Trip_Reports.html">Trip and Destination Reports</option>
+              </select>
+				    </p>					  </td>
+          </tr>
+      </table></td>
+    </tr>
+  </table>
+  <div align="left"></div>
+  </form>
+
+<div align="left">
+
+    <script language="JavaScript">
+<!-- Begin
+var ver = navigator.appName;
+if (ver == "Microsoft Internet Explorer") {
+document.write('<bgsound src="#" ID=music loop=9 AUTOSTART=true>');
+} else {
+document.write('<embed type="audio/midi" src="aeroplane.mid" AUTOSTART=false hidden=true VOLUME="90" name="musicSource" MASTERSOUND></EMBED>');
+}
+// End -->
+  </script>
+    <p class="Reg"><br />
+      </p>
+    </div>
+</center>
+      <!-- InstanceEndEditable --></td>
+    </tr>
+    <tr>
+      <td width="450" class="Small">&nbsp;</td>
+      <td width="474" class="Small"><div align="left"><a href="#Top" class="style14">Top</a></div>
+      <div align="left"></div></td>
+    </tr>
+  </table>
+</div>
+<div id="lyrTop">
+  <div align="left"><img src="Images/Coral_Top_01.jpg" width="1100" height="153" /></div>
+  <div align="right"></div>
+</div>
+<div class="Heading style1" id="lyrTitle">
+  <p align="center"><span class="style6"><span class="style7"><strong>    <span class="style16">Voice of the Sea</span><span class="style5"><br />
+  </span></strong><span class="style13">by <br />
+  Vivian </span></span></span> </p>
+</div>
+<div id="lyrSide">
+  <table width="120" border="0" cellspacing="0">
+    <tr>
+      <td><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Home','','Images/Buttons/Home_white.gif',1)"></a><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Home','','Images/Buttons/HomeBold.gif',1)"><img src="Images/Buttons/HomeReg.gif" name="Home" width="129" height="30" border="0" id="Home" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Browse_Images','','Images/Buttons/Browse_Images_Reg.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><img src="Images/Buttons/BrowseImagesReg.gif" name="BrowseImages" width="129" height="30" border="0" id="BrowseImages" onclick="MM_showHideLayers('lyrMainPage','','inherit','lyrBrImages','','show')" onmouseover="MM_swapImage('BrowseImages','','Images/Buttons/BrowseImagesBold.gif',1)" onmouseout="MM_showHideLayers('lyrBrImages','','hide');MM_swapImgRestore()" /><a href="Browse_Images.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Browse Images','','Images/Buttons/Browse_Images_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Trip_Reports.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Trip Reports','','Images/Buttons/TripReportsBold.gif',1)"><img src="Images/Buttons/TripReportsReg.gif" name="Trip Reports" width="129" height="30" border="0" id="Trip Reports" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Comments.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Comments','','Images/Buttons/Comments_Bld.gif',1)"><img src="Images/Buttons/Comments_Reg.gif" name="Comments" width="128" height="31" border="0" id="Comments" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td><a href="Links.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Links','','Images/Buttons/LinksBold.gif',1)"><img src="Images/Buttons/LinksReg.gif" name="Links" width="129" height="30" border="0" id="Links" /></a><a href="Links.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Links','','Images/Buttons/Links_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Contact_Us.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('ContactUs','','Images/Buttons/ContactUsBold.gif',1)"><img src="Images/Buttons/ContactUsReg.gif" name="ContactUs" width="129" height="30" border="0" id="ContactUs" /></a><a href="Contact_Us.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Contact Us','','Images/Buttons/Contact_Us_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+<div id="lyrBrImages" onmouseover="MM_showHideLayers('lyrBrImages','','show')" onmouseout="MM_showHideLayers('lyrBrImages','','hide')"><a href="Browse_Images_Above_the_Sea.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Above the Sea','','Images/Buttons/BrowseImages/AboveTheSea_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/AboveTheSea_REG.gif" name="Above the Sea" width="182" height="19" border="0" id="Above the Sea" /></a><a href="Browse_Images_Cephalopods.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Cephalopods','','Images/Buttons/BrowseImages/Cephalopods_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Cephalopods_REG.gif" name="Cephalopods" width="182" height="19" border="0" id="Cephalopods" /></a> <a href="Browse_Images_Crustaceans.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Crustaceans','','Images/Buttons/BrowseImages/Crustaceans_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Crustaceans_REG.gif" name="Crustaceans" width="182" height="19" border="0" id="Crustaceans" /></a> <a href="Browse_Images_Eels_Seahorses.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Eels - Seahorses','','Images/Buttons/BrowseImages/EelsSeahorses_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/EelsSeahorses_REG.gif" name="Eels - Seahorses" width="182" height="19" border="0" id="Eels - Seahorses" /></a><a href="Browse_Images_Fish.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Fish','','Images/Buttons/BrowseImages/Fish_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Fish_REG.gif" name="Fish" width="182" height="19" border="0" id="Fish" /></a><a href="Browse_Images_Nudibranchs.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Nudibranchs','','Images/Buttons/BrowseImages/NudiBranchs_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/NudiBranchs_REG.gif" name="Nudibranchs" width="182" height="19" border="0" id="Nudibranchs" /></a><a href="Browse_Images_Scenes_Coral_Sponge.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Scenes - Coral - Sponge','','Images/Buttons/BrowseImages/ScenesCoralSponge_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/ScenesCoralSponge_REG.gif" name="Scenes - Coral - Sponge" width="182" height="19" border="0" id="Scenes - Coral - Sponge" /></a><a href="Browse_Images_Sea_Anemones.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Sea Anemones','','Images/Buttons/BrowseImages/SeaAnemones_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/SeaAnemones_REG.gif" name="Sea Anemones" width="182" height="19" border="0" id="Sea Anemones" /></a><a href="Browse_Images_Starfish_Feather_Stare.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Starfish - Feather Stars','','Images/Buttons/BrowseImages/StarfishFeatherStars_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/StarfishFeatherStars_REG.gif" name="Starfish - Feather Stars" width="182" height="19" border="0" id="Starfish - Feather Stars" /></a><a href="Browse_Images_Turtles_Sharks_Whales.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Turtles - Sharks - Whales','','Images/Buttons/BrowseImages/TurtlesSharksWhales_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/TurtlesSharksWhales_REG.gif" name="Turtles - Sharks - Whales" width="182" height="19" border="0" id="Turtles - Sharks - Whales" /></a><a href="Browse_Images_Other.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Other','','Images/Buttons/BrowseImages/Other_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Other_REG.gif" name="Other" width="182" height="19" border="0" id="Other" /></a></div>
+<div id="lyrTopOfPage"></div>
+<a name="Top" id="Top"></a>
+</body>
+<!-- InstanceEnd --></html>

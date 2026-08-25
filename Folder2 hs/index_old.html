@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/Master.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+
+
+
+<script language="JavaScript1.1">
+<!--
+/*JavaScript Image slideshow:*/
+
+var slideimages=new Array()
+var slidelinks=new Array()
+
+function slideshowimages(){
+  for (i=0;i<slideshowimages.arguments.length;i++){
+  slideimages[i]=new Image()
+  slideimages[i].src=slideshowimages.arguments[i]
+  }
+}
+
+function slideshowlinks(){
+  for (i=0;i<slideshowlinks.arguments.length;i++)
+  slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+  if (!window.winslide||winslide.closed)
+    winslide=window.open(slidelinks[whichlink])
+  else
+    winslide.location=slidelinks[whichlink]
+    winslide.focus()
+}
+//-->
+</script>
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Voice of the Sea</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:6;
+}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+#lyrMainPage {
+	position:absolute;
+	width:913px;
+	height:60px;
+	z-index:2;
+	left: 185px;
+	top: 283px;
+}
+#lyrTop {
+	position:absolute;
+	width:1100px;
+	height:265px;
+	z-index:2;
+	left: -4px;
+	top: 1px;
+}
+#lyrTitle {
+	position:absolute;
+	width:344px;
+	height:64px;
+	z-index:3;
+	left: 100px;
+	top: 36px;
+}
+-->
+</style>
+<link href="Style%20Sheets/KWGSS.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {
+	font-size: xx-large;
+	font-style: italic;
+}
+#lyrSide {
+	position:absolute;
+	width:122px;
+	height:156px;
+	z-index:5;
+	left: 8px;
+	top: 295px;
+}
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:5;
+}
+#lyrTopOfPage {
+	position:absolute;
+	width:15px;
+	height:15px;
+	z-index:7;
+	left: 8px;
+	top: 8px;
+}
+.style5 {font-size: large}
+.style6 {color: #035BA5}
+.style7 {color: #0000FF}
+.style13 {
+	font-size: medium;
+	color: #000000;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.style14 {color: #035ba5}
+#lyrLine {
+	position:absolute;
+	width:860px;
+	height:8px;
+	z-index:6;
+	top: 146px;
+	left: 0px;
+}
+.style15 {font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; color: #000099; font-family: Arial, Helvetica, sans-serif;}
+.style16 {
+	color: #035B9B;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#lyrBrImage {
+	position:absolute;
+	width:121px;
+	height:73px;
+	z-index:8;
+	left: 28px;
+	top: 325px;
+	background-color: #FFFFFF;
+	visibility: hidden;
+}
+.style21 {font-size: medium; color: #000000; font-family: Georgia, "Times New Roman", Times, serif; }
+.style22 {color: #000000;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.style9 {font-size: medium;
+	font-weight: bold;
+}
+#lyrCounter {
+	position:absolute;
+	width:150px;
+	height:126px;
+	z-index:6;
+	left: 3px;
+	top: 609px;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:8;
+	top: 114px;
+	visibility: visible;
+}
+#lyrShowCtr {
+	position:absolute;
+	width:40px;
+	height:40px;
+	z-index:8;
+	left: 982px;
+	top: 159px;
+	visibility: visible;
+}
+#lyrDisCounter {
+	position:absolute;
+	width:127px;
+	height:17px;
+	z-index:9;
+	left: 11px;
+	top: 542px;
+	visibility: visible;
+	background-color: #FFFFFF;
+}
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function MM_showHideLayers() { //v6.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function Login(){
+var done=0;
+var username=document.login.username.value;
+username=username.toLowerCase();
+var password=document.login.password.value;
+password=password.toLowerCase();
+if (username=="roatan" && password=="february2010") { window.location="MembersPageOne.html"; done=1; }
+if (username=="roatan" && password=="august2010") { window.location="MembersPageTwo67778812.html"; done=1; }
+if (username=="roatan" && password=="february2011") { window.location="MembersPageThree091245662.html"; done=1; }
+if (username=="weston" && password=="july2011") { window.location="MembersPageFour77781256_92.html"; done=1; }
+if (username=="weberfamily" && password=="july2011") { window.location="MembersPageFive67342187_89.html"; done=1; }
+if (username=="roatan" && password=="february2012") { window.location="MembersPageSix99981277_67.html"; done=1; }
+if (done==0) { alert("Invalid login!"); }
+}
+// End -->
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript">
+NewImg = new Array (
+"Images/TripReports/CoCoView/Anemone.jpg",
+"Images/TripReports/CoCoView/Azure-Vase-Sponge.jpg",
+"Images/TripReports/CoCoView/Barracuda-Bite.jpg",
+"Images/TripReports/CoCoView/Blenny.jpg",
+"Images/TripReports/CoCoView/Blenny-in-Full-View.jpg",
+"Images/TripReports/CoCoView/Butter-Hamlet.jpg",
+"Images/TripReports/CoCoView/Cleaning-Station.jpg",
+"Images/TripReports/CoCoView/Coral-Inner-Sanctum.jpg",
+"Images/TripReports/CoCoView/Coral-Polyps.jpg",
+"Images/TripReports/CoCoView/Coral-Rod.jpg",
+"Images/TripReports/CoCoView/Cowfish.jpg",
+"Images/TripReports/CoCoView/Crinoid-Shrimp.jpg",
+"Images/TripReports/CoCoView/Flounder-Eyes.jpg",
+"Images/TripReports/CoCoView/Flounder-on-the-Rise.jpg",
+"Images/TripReports/CoCoView/Flounder-on-the-Rise-2.jpg",
+"Images/TripReports/CoCoView/Friendly-Remora.jpg",
+"Images/TripReports/CoCoView/Goatfish-Gathering.jpg",
+"Images/TripReports/CoCoView/Goldentail-Moray.jpg",
+"Images/TripReports/CoCoView/Gorgonian-Hydroid.jpg",
+"Images/TripReports/CoCoView/Green-Moray.jpg",
+"Images/TripReports/CoCoView/Green-Moray-2.jpg",
+"Images/TripReports/CoCoView/Grouper.jpg",
+"Images/TripReports/CoCoView/Hydroid.jpg",
+"Images/TripReports/CoCoView/Indigo-Hamlet.jpg",
+"Images/TripReports/CoCoView/Lizardfish-.jpg",
+"Images/TripReports/CoCoView/Nurse-Shark-Eye.jpg",
+"Images/TripReports/CoCoView/Orange-Cup-Coral.jpg",
+"Images/TripReports/CoCoView/Pretty-in-Pink.jpg",
+"Images/TripReports/CoCoView/Red-Hind.jpg",
+"Images/TripReports/CoCoView/Red-White-and-Blue.jpg",
+"Images/TripReports/CoCoView/Saddle-Blenny.jpg",
+"Images/TripReports/CoCoView/Scorpianfish.jpg",
+"Images/TripReports/CoCoView/Seahorse-1-of-5.jpg",
+"Images/TripReports/CoCoView/Seahorse-2-of-5.jpg",
+"Images/TripReports/CoCoView/Seahorse-3-of-5.jpg",
+"Images/TripReports/CoCoView/Seahorse-4-of-5.jpg",
+"Images/TripReports/CoCoView/Seahorse-5-of-5.jpg",
+"Images/TripReports/CoCoView/Shark.jpg",
+"Images/TripReports/CoCoView/Sharptail-Eel-oin-the-Hunt.jpg",
+"Images/TripReports/CoCoView/Sharptail-Puffer-Face.jpg",
+"Images/TripReports/CoCoView/Shy-Seahorse.jpg",
+"Images/TripReports/CoCoView/Slender-Filefish.jpg",
+"Images/TripReports/CoCoView/Solitude.jpg",
+"Images/TripReports/CoCoView/Spinyhead-Blenny.jpg",
+"Images/TripReports/CoCoView/Spotted-Moray.jpg",
+"Images/TripReports/CoCoView/Spotted-Trunkfish.jpg",
+"Images/TripReports/CoCoView/Swimming.jpg",
+"Images/TripReports/CoCoView/Swimming-Crinoid.jpg",
+"Images/TripReports/CoCoView/Toadfish-Face.jpg",
+"Images/TripReports/CoCoView/Toadfish-Full-Body.jpg",
+"Images/TripReports/CoCoView/Triplefin-Blenny.jpg",
+"Images/TripReports/CoCoView/Trumpetfish.jpg",
+"Images/TripReports/CoCoView/Upside-Down-Jellyfish.jpg",
+"Images/TripReports/CoCoView/Wary-Grouper.jpg",
+"Images/TripReports/Spawn/Standing_At_Attention.jpg",
+"Images/TripReports/Spawn/Tigertail_Spawn.jpg",
+"Images/TripReports/Spawn/Tigertail_Spawn_Macro.jpg",
+"Images/TripReports/CoCoView/Yellowhead-Jawfish.jpg"
+);
+var ImgNum = 0;
+var ImgLength = NewImg.length - 1;
+
+//Time delay between Slides in milliseconds
+var delay = 3000;
+
+var lock = false;
+var run;
+function chgImg(direction) {
+if (document.images) {
+ImgNum = ImgNum + direction;
+if (ImgNum > ImgLength) {
+ImgNum = 0;
+}
+if (ImgNum < 0) {
+ImgNum = ImgLength;
+}
+document.slideshow.src = NewImg[ImgNum];
+   }
+}
+function auto() {
+if (lock == true) {
+lock = false;
+window.clearInterval(run);
+}
+else if (lock == false) {
+lock = true;
+run = setInterval("chgImg(1)", delay);
+   }
+}
+//  End -->
+</script>
+</head>
+<body onload="MM_preloadImages('Images/Buttons/Browse_Images_white.gif','Images/Buttons/Links_white.gif','Images/Buttons/Contact_Us_white.gif','Images/Buttons/LinksBold.gif','Images/Buttons/ContactUsBold.gif','Images/Buttons/BrowseImagesBold.gif','Images/Buttons/TripReportsBold.gif','Images/Buttons/Fish9_Bold.gif','Images/Buttons/Creatures9_Bold.gif','Images/Buttons/BrowseImages/AboveTheSea_BLD.gif','Images/Buttons/BrowseImages/Cephalopods_BLD.gif','Images/Buttons/BrowseImages/Crustaceans_BLD.gif','Images/Buttons/BrowseImages/EelsSeahorses_BLD.gif','Images/Buttons/BrowseImages/Fish_BLD.gif','Images/Buttons/BrowseImages/NudiBranchs_BLD.gif','Images/Buttons/BrowseImages/ScenesCoralSponge_BLD.gif','Images/Buttons/BrowseImages/SeaAnemones_BLD.gif','Images/Buttons/BrowseImages/StarfishFeatherStars_BLD.gif','Images/Buttons/BrowseImages/TurtlesSharksWhales_BLD.gif','Images/Buttons/BrowseImages/Other_BLD.gif','Images/Buttons/Site_Map_Bld.gif')">
+<div id="lyrCounter"></div>
+<div id="lyrDisCounter" onclick="MM_showHideLayers('lyrCounter','','hide');MM_showHideLayers('lyrTitle','','hide')" onmouseout="MM_showHideLayers('lyrCounter','','show')"></div>
+<p>1</p>
+<p>&nbsp; </p>
+<div id="lyrMainPage">
+  <table width="910" border="0">
+    <tr>
+      <td colspan="2"><!-- InstanceBeginEditable name="EditRegion3" -->
+<embed src="http://www.voiceofthesea.com/Sounds/MP3/Havana_Daydreamin.mp3" autostart="true" loop="true" width="0" height="0" hidden="true"> 		  
+        <div align="center"></div>
+        <p class="Reg">Vivian Weber is a native  of Wisconsin; a retired public school Speech Pathologist and Clinical  Supervisor in the University of Wisconsin system.&nbsp; She has been diving for  25 years in the Caribbean and more recently in the <img src="Images/NewDiverHigh.jpg" alt="Vivian diving" width="380" height="474" hspace="19" vspace="21" align="left" />South Pacific.&nbsp; A  Divemaster and underwater photographer, Vivian describes her affair with the  ocean in this way:<br />
+          <br />
+&quot;The ocean is  my passion -- its force, depth, indescribable blue, and its <img src="Images/Comments-Page-Photo.jpg" alt="Enjoy my Site!" width="250" height="187" hspace="17" vspace="31" border="0" align="right" usemap="#Map" />
+          <map name="Map" id="Map">
+            <area shape="rect" coords="195,3,255,34" href="Group_Updates.html" />
+          </map>
+          secret life of  brilliant corals and odd creatures.&nbsp;&nbsp; There is nothing quite like  floating, suspended in a column of water, sunlight glistening from above as the  wonders of the sea spread below.&nbsp; Words cannot adequately communicate the  exhilaration of gliding over the edge of a coral wall and peering into the  abyss or staring into the gaping mouth of a 30' whale shark as it surfaces  or&nbsp;intruding on the private life of squid engaged in their mating dance.<br />
+          <br />
+          So for a few  minutes, sit back and allow me to be&nbsp;the <span class="style6 style20"><em>Voice of the Sea</em></span> and share with  you my collection of underwater images.&nbsp;         
+        
+        <p class="Reg">Enjoy your visit.&nbsp; Find your  passion.&quot;        
+        <p class="Reg">The Sea, once it casts its spell, holds one in its net of wonder  forever.<strong> &nbsp; &nbsp; </strong><br />
+        Jacques Cousteau<br />
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp;</strong><br />  
+          <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+// Get today's current date.
+var now = new Date();
+// Array list of days.
+var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+// Array list of months.
+var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+// Calculate the number of the current day in the week.
+var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+// Calculate four digit year.
+function fourdigits(number)	{
+	return (number < 1000) ? number + 1900 : number;
+}
+// Join it all together
+today =  days[now.getDay()] + ", " +
+         months[now.getMonth()] + " " +
+         date + ", " +
+         (fourdigits(now.getYear())) ;
+ 
+// Print out the data.
+document.write(today);
+//  End -->
+          </script>
+          <br />
+          <br />
+        </p>
+        <!-- InstanceEndEditable --></td>
+    </tr>
+    <tr>
+      <td width="411" class="Small">&nbsp;</td>
+      <td width="489" class="Small"><div align="left" class="style15"><a href="#Top" class="Small style14">Top</a></div>
+      <div align="left"></div></td>
+    </tr>
+  </table>
+</div>
+<div id="lyrTop">
+  <div align="center"><img src="Images/Coral_Top_01.jpg" width="1100" height="265" /></div>
+</div>
+<div class="Heading style1" id="lyrTitle">
+  <p align="center"><span class="style6"><span class="style7"><strong><span class="style16">Voice of the Sea</span><span class="style5"><br />
+  </span></strong><span class="style5"><span class="style21">Underwater Images </span></span> <span class="style21"><br />
+  <strong onclick="MM_showHideLayers('lyrCounter','','show')">by<br />
+  </strong></span><span class="style22"><span class="style9">Vivian Weber</span></span></span></span> </p>
+</div>
+<div id="lyrSide">
+  <table width="120" border="0" cellspacing="0">
+    
+    <tr>
+      <td><img src="Images/Buttons/BrowseImagesReg.gif" name="BrowseImages" width="129" height="30" border="0" id="BrowseImages" onclick="MM_showHideLayers('lyrBrImage','','show')" onmouseover="MM_swapImage('BrowseImages','','Images/Buttons/BrowseImagesBold.gif',1)" onmouseout="MM_showHideLayers('lyrBrImage','','hide');MM_swapImgRestore()" /><a href="Browse_Images.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Browse Images','','Images/Buttons/Browse_Images_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Trip_Reports.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Trip Reports','','Images/Buttons/TripReportsBold.gif',1)"><img src="Images/Buttons/TripReportsReg.gif" name="Trip Reports" width="129" height="30" border="0" id="Trip Reports" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Comments.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Comments','','Images/Buttons/Comments_Bld.gif',0)"><img src="Images/Buttons/Comments_Reg.gif" name="Comments" width="128" height="31" border="0" id="Comments" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td><a href="Links.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Links','','Images/Buttons/LinksBold.gif',1)"><img src="Images/Buttons/LinksReg.gif" name="Links" width="129" height="30" border="0" id="Links" /></a><a href="Links.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Links','','Images/Buttons/Links_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Contact_Us.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('ContactUs','','Images/Buttons/ContactUsBold.gif',1)"><img src="Images/Buttons/ContactUsReg.gif" name="ContactUs" width="129" height="30" border="0" id="ContactUs" /></a><a href="Contact_Us.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Contact Us','','Images/Buttons/Contact_Us_white.gif',1)"></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="Site_Map.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Site Map','','Images/Buttons/Site_Map_Bld.gif',1)"><img src="Images/Buttons/Site_Map_Reg.gif" name="Site Map" width="129" height="30" border="0" id="Site Map" /></a></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    
+    
+    <tr>    </tr>
+    <tr>
+      <td><div align="center"><a href="Site_Map.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Site Map','','Images/Buttons/Site_Map_Bld.gif',1)"><br />
+        
+        
+          -<!-- Start of SimpleHitCounter Code -->
+<div align="center"><a href="http://www.simplehitcounter.com" target="_blank"><img src="http://simplehitcounter.com/hit.php?uid=1965574&f=0&b=16777215" border="0" height="18" width="83" alt="web counter"></a><br><a href="http://www.simplehitcounter.com" target="_blank" style="text-decoration:none;">   </a></div>
+<!-- End of SimpleHitCounter Code -->
+
+
+    </tr>
+  </table>
+</div>
+<div id="lyrBrImage" onmouseover="MM_showHideLayers('lyrBrImage','','show')" onmouseout="MM_showHideLayers('lyrBrImage','','hide')"><a href="Browse_Images_Above_the_Sea.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Above the Sea','','Images/Buttons/BrowseImages/AboveTheSea_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/AboveTheSea_REG.gif" name="Above the Sea" width="182" height="19" border="0" id="Above the Sea" /></a><a href="Browse_Images_Cephalopods.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Cephalopods','','Images/Buttons/BrowseImages/Cephalopods_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Cephalopods_REG.gif" name="Cephalopods" width="182" height="19" border="0" id="Cephalopods" /></a><!--  RRS1 --><a href="Browse_Images_Crustaceans.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Crustaceans','','Images/Buttons/BrowseImages/Crustaceans_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Crustaceans_REG.gif" name="Crustaceans" width="182" height="19" border="0" id="Crustaceans" /></a<!--  RRS2 --><a href="Browse_Images_Eels_Seahorses.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Eels - Seahorses','','Images/Buttons/BrowseImages/EelsSeahorses_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/EelsSeahorses_REG.gif" name="Eels - Seahorses" width="182" height="19" border="0" id="Eels - Seahorses" /></a><a href="Browse_Images_Fish.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Fish','','Images/Buttons/BrowseImages/Fish_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Fish_REG.gif" name="Fish" width="182" height="19" border="0" id="Fish" /></a><a href="Browse_Images_Nudibranchs.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Nudibranchs','','Images/Buttons/BrowseImages/NudiBranchs_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/NudiBranchs_REG.gif" name="Nudibranchs" width="182" height="19" border="0" id="Nudibranchs" /></a><a href="Browse_Images_Scenes_Coral_Sponge.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Scenes - Coral - Sponge','','Images/Buttons/BrowseImages/ScenesCoralSponge_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/ScenesCoralSponge_REG.gif" name="Scenes - Coral - Sponge" width="182" height="19" border="0" id="Scenes - Coral - Sponge" /></a><a href="Browse_Images_Sea_Anemones.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Sea Anemones','','Images/Buttons/BrowseImages/SeaAnemones_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/SeaAnemones_REG.gif" name="Sea Anemones" width="182" height="19" border="0" id="Sea Anemones" /></a><a href="Browse_Images_Starfish_Feather_Stare.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Starfish - Feather Stars','','Images/Buttons/BrowseImages/StarfishFeatherStars_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/StarfishFeatherStars_REG.gif" name="Starfish - Feather Stars" width="182" height="19" border="0" id="Starfish - Feather Stars" /></a><a href="Browse_Images_Turtles_Sharks_Whales.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Turtles - Sharks - Whales','','Images/Buttons/BrowseImages/TurtlesSharksWhales_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/TurtlesSharksWhales_REG.gif" name="Turtles - Sharks - Whales" width="182" height="19" border="0" id="Turtles - Sharks - Whales" /></a><a href="Browse_Images_Other.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Other','','Images/Buttons/BrowseImages/Other_BLD.gif',1)"><img src="Images/Buttons/BrowseImages/Other_REG.gif" name="Other" width="182" height="19" border="0" id="Other" /></a></div>
+<div id="lyrTopOfPage"></div>
+<a name="Top" id="Top"></a>
+</body>
+<!-- InstanceEnd --></html>
